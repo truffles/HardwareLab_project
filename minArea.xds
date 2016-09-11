@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<DesignStrategy goal="Area Reduction" strategy="minArea" version="12.1">
+
+  <Description>This area reduction strategy will maximize the amount of LUT reduction.</Description>
+
+  <DeviceList devices="spartan6"/>
+
+  <Properties>
+    <property name="Synthesize - XST:Optimization Goal" value="Area"/>
+    <property name="Synthesize - XST:Optimization Effort" value="High"/>
+    <property name="Synthesize - XST:FSM Style" value="Bram"/>
+    <property name="Synthesize - XST:RAM Extraction" value="true"/>
+    <property name="Synthesize - XST:RAM Style" value="Block"/>
+    <property name="Synthesize - XST:ROM Extraction" value="true"/>
+    <property name="Synthesize - XST:ROM Style" value="Block"/>
+    <property name="Synthesize - XST:Automatic BRAM Packing" value="true"/>
+    <property name="Synthesize - XST:Max Fanout" value="100000"/>
+    <property name="Synthesize - XST:Register Duplication" value="true"/>
+    <property name="Synthesize - XST:Equivalent Register Removal" value="true"/>
+    <property name="Synthesize - XST:Register Balancing" value="Yes"/>
+    <property name="Synthesize - XST:Pack I/O Registers into IOBs" value="Yes"/>
+    <property name="Synthesize - XST:LUT Combining" value="Area"/>
+    <property name="Synthesize - XST:Optimize Instantiated Primitives" value="true"/>
+    <property name="Map:Placer Effort Level" value="High"/>
+    <property name="Map:Placer Extra Effort" value="Continue on Impossible"/>
+    <property name="Map:Combinatorial Logic Optimization" value="true"/>
+    <property name="Map:Global Optimization" value="Area"/>
+    <property name="Map:Equivalent Register Removal" value="true"/>
+    <property name="Map:Pack I/O Registers/Latches into IOBs" value="For Inputs and Outputs"/>
+    <property name="Map:Maximum Compression" value="true"/>
+    <property name="Map:LUT Combining" value="Area"/>
+    <property name="Map:Map Slice Logic into Unused Block RAMs" value="true"/>
+    <property name="Place &amp; Route:Place And Route Mode" value="Reentrant Route"/>
+    <property name="Place &amp; Route:Place &amp; Route Effort Level (Overall)" value="High"/>
+  </Properties>
+
+</DesignStrategy>

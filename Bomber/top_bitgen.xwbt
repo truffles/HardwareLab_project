@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\top.ncd
+OUTFILE=D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber
+LICENSE=WebPack
+USER_INFO=210733606_0_0_351

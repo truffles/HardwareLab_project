@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.49d
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.49d
+DATE            06/12/2013 - 20:17
+SOURCE          D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber_slave\bomber_slave.mcs
+DEVICE          8192K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x78EB5206
+START_ADDRESS   0x00000000 END_ADDRESS 0x00071883 DIRECTION_UP   "D:/NTHU/101 Spring/Hardware Lab/FinalProject/Bomber_slave/top.bit" 6slx16csg324

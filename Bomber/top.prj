@@ -1,0 +1,7 @@
+verilog work "transmitter.v"
+verilog work "receiver.v"
+verilog work "lcd_control.v"
+verilog work "keypad_scanner.v"
+verilog work "clk_div.v"
+verilog work "Bomber_Contrl.v"
+verilog work "top.v"

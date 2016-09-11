@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.49d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber//bomber" -s 8192 -u 0000 "D:/NTHU/101 Spring/Hardware Lab/FinalProject/Bomber/top.bit" -spi 
+
+PROM D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\bomber.prm map: Thu Dec 12 08:30:17 2013
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          8192K
+PROM start    0000:0000
+PROM end      007f:ffff
+PROM checksum 79202431
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0007:176f     Dec 12 08:28:56 2013 D:/NTHU/101 Spring/Hardware Lab/FinalProject/Bomber/top.bit

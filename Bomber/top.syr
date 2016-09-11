@@ -1,0 +1,2529 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : Bram
+RAM Extraction                     : Yes
+RAM Style                          : Block
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Block
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Area
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Optimize Instantiated Primitives   : YES
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : Rebuilt
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : NO
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : YES
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\transmitter.v" into library work
+Parsing module <transmitter>.
+Analyzing Verilog file "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\receiver.v" into library work
+Parsing module <receiver>.
+Analyzing Verilog file "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" into library work
+Parsing module <lcd_control>.
+Analyzing Verilog file "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\keypad_scanner.v" into library work
+Parsing module <keypad_scanner>.
+Analyzing Verilog file "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" into library work
+Parsing module <Bomber_Contrl>.
+Analyzing Verilog file "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\top.v" Line 31: Port clock_10KHz is not connected to this instance
+
+Elaborating module <top>.
+
+Elaborating module <clk_div>.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\clk_div.v" Line 15: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\clk_div.v" Line 35: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\clk_div.v" Line 46: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\clk_div.v" Line 57: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\clk_div.v" Line 68: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\clk_div.v" Line 79: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\clk_div.v" Line 90: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <keypad_scanner>.
+
+Elaborating module <Bomber_Contrl>.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 153: Result of 32-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 177: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 183: Result of 26-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 193: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 199: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 211: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 220: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 267: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 294: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 321: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 329: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 348: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 350: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 356: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 412: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 421: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 427: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 443: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 446: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 453: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 458: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 472: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 481: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 487: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 501: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 504: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 511: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 516: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 548: Result of 26-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v" Line 613: Result of 7-bit expression is truncated to fit in 6-bit target.
+
+Elaborating module <lcd_control>.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 124: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 131: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 133: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 168: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 169: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 182: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 184: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 231: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 286: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v" Line 287: Result of 32-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <transmitter>.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\transmitter.v" Line 51: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\transmitter.v" Line 69: Result of 7-bit expression is truncated to fit in 6-bit target.
+
+Elaborating module <receiver>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\top.v".
+INFO:Xst:3210 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\top.v" line 31: Output port <clock_10KHz> of the instance <c_div> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\top.v" line 31: Output port <clock_100Hz> of the instance <c_div> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\top.v" line 31: Output port <clock_10Hz> of the instance <c_div> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\top.v" line 31: Output port <clock_1Hz> of the instance <c_div> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <DATA_READY_DELAYED>.
+    Found 5-bit register for signal <KEY_DATA>.
+    Found 5-bit comparator equal for signal <RECV_DATA[0]_RECV_DATA[5]_equal_9_o> created at line 63
+    Found 5-bit comparator equal for signal <RECV_DATA[0]_RECV_DATA[10]_equal_12_o> created at line 66
+    Found 1-bit comparator equal for signal <RECV_DATA[0]_RECV_DATA[15]_equal_14_o> created at line 66
+    Found 5-bit comparator equal for signal <RECV_DATA[5]_RECV_DATA[10]_equal_16_o> created at line 69
+    Found 1-bit comparator equal for signal <RECV_DATA[10]_RECV_DATA[15]_equal_18_o> created at line 69
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <clk_div>.
+    Related source file is "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\clk_div.v".
+    Found 1-bit register for signal <clock_1MHz_int>.
+    Found 1-bit register for signal <clock_1MHz>.
+    Found 1-bit register for signal <clock_100KHz>.
+    Found 1-bit register for signal <clock_10KHz>.
+    Found 1-bit register for signal <clock_1KHz>.
+    Found 1-bit register for signal <clock_100Hz>.
+    Found 1-bit register for signal <clock_10Hz>.
+    Found 1-bit register for signal <clock_1Hz>.
+    Found 3-bit register for signal <count_100KHz>.
+    Found 1-bit register for signal <clock_100KHz_int>.
+    Found 3-bit register for signal <count_10KHz>.
+    Found 1-bit register for signal <clock_10KHz_int>.
+    Found 3-bit register for signal <count_1KHz>.
+    Found 1-bit register for signal <clock_1KHz_int>.
+    Found 3-bit register for signal <count_100Hz>.
+    Found 1-bit register for signal <clock_100Hz_int>.
+    Found 3-bit register for signal <count_10Hz>.
+    Found 1-bit register for signal <clock_10Hz_int>.
+    Found 3-bit register for signal <count_1Hz>.
+    Found 1-bit register for signal <clock_1Hz_int>.
+    Found 5-bit register for signal <count_1MHz>.
+    Found 5-bit adder for signal <count_1MHz[4]_GND_2_o_add_2_OUT> created at line 15.
+    Found 3-bit adder for signal <count_100KHz[2]_GND_2_o_add_7_OUT> created at line 35.
+    Found 3-bit adder for signal <count_10KHz[2]_GND_2_o_add_12_OUT> created at line 46.
+    Found 3-bit adder for signal <count_1KHz[2]_GND_2_o_add_17_OUT> created at line 57.
+    Found 3-bit adder for signal <count_100Hz[2]_GND_2_o_add_22_OUT> created at line 68.
+    Found 3-bit adder for signal <count_10Hz[2]_GND_2_o_add_27_OUT> created at line 79.
+    Found 3-bit adder for signal <count_1Hz[2]_GND_2_o_add_32_OUT> created at line 90.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+Unit <clk_div> synthesized.
+
+Synthesizing Unit <keypad_scanner>.
+    Related source file is "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\keypad_scanner.v".
+        s_init = 2'b00
+        s_scan = 2'b01
+        s_update = 2'b10
+        key_0 = 4'b0000
+        key_1 = 4'b0001
+        key_2 = 4'b0010
+        key_3 = 4'b0011
+        key_4 = 4'b0100
+        key_5 = 4'b0101
+        key_6 = 4'b0110
+        key_7 = 4'b0111
+        key_8 = 4'b1000
+        key_9 = 4'b1001
+        key_A = 4'b1010
+        key_B = 4'b1011
+        key_C = 4'b1100
+        key_D = 4'b1101
+        key_E = 4'b1110
+        key_F = 4'b1111
+    Found 1-bit register for signal <up>.
+    Found 1-bit register for signal <down>.
+    Found 1-bit register for signal <left>.
+    Found 1-bit register for signal <right>.
+    Found 1-bit register for signal <action>.
+    Found 2-bit register for signal <sel>.
+    Found 2-bit register for signal <state>.
+    Found 16-bit register for signal <keys_pressed>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | scanned_to_3rd_row (negative)                  |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 01                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | BRAM                                           |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <sel[1]_GND_3_o_add_8_OUT> created at line 80.
+    Found 4x4-bit Read Only RAM for signal <_n0105>
+    Found 16-bit 4-to-1 multiplexer for signal <keys_pressed_next> created at line 125.
+    Found 1-bit tristate buffer for signal <row<0>> created at line 122
+    Found 1-bit tristate buffer for signal <row<1>> created at line 122
+    Found 1-bit tristate buffer for signal <row<2>> created at line 122
+    Found 1-bit tristate buffer for signal <row<3>> created at line 122
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   4 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <keypad_scanner> synthesized.
+
+Synthesizing Unit <Bomber_Contrl>.
+    Related source file is "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\Bomber_Contrl.v".
+        WIDTH = 8
+        HRIGHT = 5
+        S_INIT = 3'b000
+        S_COUNTDOWN = 3'b001
+        S_SCAN = 3'b010
+        S_PHYS = 3'b011
+        S_PAUSE = 3'b100
+        S_GAMEOVER = 3'b101
+        G_INIT = 2'b00
+        G_COUNTDOWN = 2'b01
+        G_PLAY = 2'b10
+        G_GAMEOVER = 2'b11
+        AIR = 4'b0000
+        WALL = 4'b0001
+        STONE = 4'b0010
+        BOMB = 4'b1111
+        BOMB_EXPLODE = 4'b1000
+        T_IDLE = 2'b00
+        T_INTERRUPT = 2'b01
+        T_PAUSE = 2'b10
+        T_TRANSMIT = 2'b11
+    Found 3-bit register for signal <STATE>.
+    Found 160-bit register for signal <MAP>.
+    Found 2-bit register for signal <INDEX>.
+    Found 25-bit register for signal <PAUSE>.
+    Found 3-bit register for signal <SCAN_PAUSE>.
+    Found 2-bit register for signal <SCAN_DIR>.
+    Found 3-bit register for signal <OFFSET>.
+    Found 6-bit register for signal <MAP_POS>.
+    Found 1-bit register for signal <START>.
+    Found 1-bit register for signal <CLEAR_EXPLODE>.
+    Found 1-bit register for signal <BOMB_COUNT>.
+    Found 1-bit register for signal <EXPLODE>.
+    Found 40-bit register for signal <BOMB_MAP>.
+    Found 1-bit register for signal <BUTTON_DETECT>.
+    Found 1-bit register for signal <UP_DETECT>.
+    Found 1-bit register for signal <DOWN_DETECT>.
+    Found 1-bit register for signal <LEFT_DETECT>.
+    Found 1-bit register for signal <RIGHT_DETECT>.
+    Found 1-bit register for signal <PLAYER_STATE>.
+    Found 2-bit register for signal <P1_GO_UP>.
+    Found 2-bit register for signal <P1_GO_DOWN>.
+    Found 2-bit register for signal <P1_GO_LEFT>.
+    Found 2-bit register for signal <P1_GO_RIGHT>.
+    Found 6-bit register for signal <P1_X>.
+    Found 6-bit register for signal <P1_SUBX>.
+    Found 6-bit register for signal <P1_Y>.
+    Found 6-bit register for signal <P1_SUBY>.
+    Found 4-bit register for signal <P1_DIR>.
+    Found 2-bit register for signal <P1_STATUS>.
+    Found 2-bit register for signal <TR_STATE>.
+    Found 6-bit register for signal <TR_COUNTER>.
+    Found 16-bit register for signal <DATA_BIT>.
+    Found 2-bit register for signal <GAME_STATE>.
+    Found finite state machine <FSM_1> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 29                                             |
+    | Inputs             | 17                                             |
+    | Outputs            | 5                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | BRAM                                           |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <TR_STATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | LINK_CLK (rising_edge)                         |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | BRAM                                           |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <SCAN_DIR>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 2                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Clock enable       | _n8392 (negative)                              |
+    | Reset              | STATE<1> (negative)                            |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | BRAM                                           |
+    -----------------------------------------------------------------------
+    Found 5-bit subtractor for signal <GND_8_o_GND_8_o_sub_237_OUT> created at line 211.
+    Found 32-bit subtractor for signal <GND_8_o_GND_8_o_sub_761_OUT> created at line 258.
+    Found 7-bit subtractor for signal <n3651[6:0]> created at line 263.
+    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_1117_OUT> created at line 284.
+    Found 7-bit subtractor for signal <n4309[6:0]> created at line 316.
+    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_1821_OUT> created at line 336.
+    Found 32-bit subtractor for signal <GND_8_o_GND_8_o_sub_1829_OUT> created at line 339.
+    Found 4-bit subtractor for signal <GND_8_o_GND_8_o_sub_2072_OUT> created at line 412.
+    Found 4-bit subtractor for signal <GND_8_o_GND_8_o_sub_2168_OUT> created at line 427.
+    Found 4-bit subtractor for signal <GND_8_o_GND_8_o_sub_2345_OUT> created at line 472.
+    Found 4-bit subtractor for signal <GND_8_o_GND_8_o_sub_2441_OUT> created at line 487.
+    Found 3-bit adder for signal <SCAN_PAUSE[2]_GND_8_o_add_60_OUT> created at line 193.
+    Found 7-bit adder for signal <_n8146> created at line 237.
+    Found 7-bit adder for signal <_n8112> created at line 240.
+    Found 7-bit adder for signal <_n8113> created at line 289.
+    Found 4-bit adder for signal <n7107> created at line 326.
+    Found 7-bit adder for signal <_n8116> created at line 344.
+    Found 3-bit adder for signal <OFFSET[2]_GND_8_o_add_1998_OUT> created at line 350.
+    Found 6-bit adder for signal <MAP_POS[5]_GND_8_o_add_2012_OUT> created at line 356.
+    Found 9-bit adder for signal <n8000> created at line 424.
+    Found 6-bit adder for signal <n7994[5:0]> created at line 425.
+    Found 9-bit adder for signal <n8002> created at line 425.
+    Found 4-bit adder for signal <n7517> created at line 443.
+    Found 9-bit adder for signal <n4935> created at line 456.
+    Found 9-bit adder for signal <n4937> created at line 457.
+    Found 4-bit adder for signal <n7534> created at line 458.
+    Found 9-bit adder for signal <n8007[8:0]> created at line 485.
+    Found 10-bit adder for signal <n8015> created at line 485.
+    Found 4-bit adder for signal <n7605> created at line 501.
+    Found 9-bit adder for signal <n5026> created at line 514.
+    Found 10-bit adder for signal <n5028> created at line 515.
+    Found 4-bit adder for signal <n7622> created at line 516.
+    Found 32-bit adder for signal <n5052> created at line 525.
+    Found 32-bit adder for signal <n5054> created at line 525.
+    Found 32-bit adder for signal <n5055> created at line 525.
+    Found 32-bit adder for signal <n5219> created at line 531.
+    Found 32-bit adder for signal <n5221> created at line 531.
+    Found 32-bit adder for signal <n5222> created at line 531.
+    Found 25-bit adder for signal <PAUSE[24]_GND_8_o_add_3005_OUT> created at line 548.
+    Found 6-bit adder for signal <TR_COUNTER[5]_GND_8_o_add_3061_OUT> created at line 613.
+    Found 25-bit subtractor for signal <GND_8_o_GND_8_o_sub_44_OUT<24:0>> created at line 153.
+    Found 2-bit subtractor for signal <GND_8_o_GND_8_o_sub_51_OUT<1:0>> created at line 177.
+    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_2130_OUT<7:0>> created at line 424.
+    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_2147_OUT<7:0>> created at line 425.
+    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_2403_OUT<7:0>> created at line 484.
+    Found 8-bit subtractor for signal <GND_8_o_GND_8_o_sub_2420_OUT<7:0>> created at line 485.
+    Found 160-bit shifter logical left for signal <n3158> created at line 211
+    Found 160-bit shifter logical left for signal <n3320> created at line 212
+    Found 160-bit shifter logical left for signal <n3493> created at line 251
+    Found 160-bit shifter logical left for signal <n3822> created at line 277
+    Found 160-bit shifter logical left for signal <n4151> created at line 304
+    Found 160-bit shifter logical left for signal <n4480> created at line 332
+    Found 9-bit shifter logical right for signal <n4864> created at line 412
+    Found 9-bit shifter logical right for signal <n4872> created at line 413
+    Found 9-bit shifter logical right for signal <n4874> created at line 417
+    Found 1x2-bit multiplier for signal <PLAYER_STATE_PWR_8_o_MuLt_2124_OUT> created at line 424.
+    Found 9-bit shifter logical right for signal <n4879> created at line 424
+    Found 9-bit shifter logical right for signal <n4880> created at line 424
+    Found 160-bit shifter logical left for signal <n4883> created at line 424
+    Found 160-bit shifter logical left for signal <n4887> created at line 425
+    Found 160-bit shifter logical left for signal <n4936> created at line 456
+    Found 160-bit shifter logical left for signal <n4938> created at line 457
+    Found 9-bit shifter logical right for signal <n4968> created at line 473
+    Found 160-bit shifter logical left for signal <n4974> created at line 484
+    Found 160-bit shifter logical left for signal <n4978> created at line 485
+    Found 160-bit shifter logical left for signal <n5027> created at line 514
+    Found 160-bit shifter logical left for signal <n5029> created at line 515
+    Found 160-bit shifter logical left for signal <n5050> created at line 524
+    Found 160-bit shifter logical left for signal <n5217> created at line 530
+    Found 160-bit shifter logical left for signal <n5441> created at line 600
+    Found 1-bit 160-to-1 multiplexer for signal <MAP_POS[5]_PWR_8_o_equal_233_o> created at line 210.
+    Found 1-bit 40-to-1 multiplexer for signal <MAP_POS[5]_X_8_o_Mux_576_o> created at line 235.
+    Found 3-bit 4-to-1 multiplexer for signal <SCAN_DIR[1]_OFFSET[2]_wide_mux_2008_OUT> created at line 244.
+    Found 2-bit 4-to-1 multiplexer for signal <SCAN_DIR[1]_P1_STATUS[1]_wide_mux_2011_OUT> created at line 244.
+    Found 6-bit comparator greater for signal <MAP_POS[5]_PWR_8_o_LessThan_576_o> created at line 231
+    Found 6-bit comparator greater for signal <MAP_POS[5]_OFFSET[2]_LessThan_582_o> created at line 246
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_750_o> created at line 255
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_754_o> created at line 255
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_758_o> created at line 258
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_762_o> created at line 258
+    Found 7-bit comparator greater for signal <GND_8_o_BUS_0012_LessThan_938_o> created at line 272
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1110_o> created at line 281
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1118_o> created at line 284
+    Found 3-bit comparator greater for signal <MAP_POS[2]_OFFSET[2]_LessThan_1293_o> created at line 299
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1461_o> created at line 308
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1465_o> created at line 308
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1469_o> created at line 311
+    Found 4-bit comparator greater for signal <GND_8_o_BUS_0030_LessThan_1649_o> created at line 326
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1822_o> created at line 336
+    Found 32-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1830_o> created at line 339
+    Found 3-bit comparator greater for signal <P1_X[5]_PWR_8_o_LessThan_2200_o> created at line 439
+    Found 3-bit comparator greater for signal <P1_Y[5]_PWR_8_o_LessThan_2473_o> created at line 497
+    Found 3-bit comparator greater for signal <GND_8_o_P1_SUBX[2]_LessThan_2613_o> created at line 525
+    Found 3-bit comparator greater for signal <GND_8_o_P1_SUBY[2]_LessThan_2616_o> created at line 525
+    Found 3-bit comparator greater for signal <GND_8_o_P1_SUBX[5]_LessThan_2790_o> created at line 531
+    Found 3-bit comparator greater for signal <GND_8_o_P1_SUBY[5]_LessThan_2793_o> created at line 531
+    Found 6-bit comparator greater for signal <TR_COUNTER[5]_PWR_8_o_LessThan_3052_o> created at line 599
+    Found 7-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1114_o> created at line 284
+    Found 7-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1826_o> created at line 339
+    Found 7-bit comparator equal for signal <GND_8_o_GND_8_o_equal_581_o> created at line 240
+    Found 7-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1818_o> created at line 336
+    Found 7-bit comparator equal for signal <GND_8_o_GND_8_o_equal_579_o> created at line 237
+    Found 7-bit comparator equal for signal <GND_8_o_GND_8_o_equal_1106_o> created at line 281
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <SCAN_DIR> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  45 Adder/Subtractor(s).
+	inferred 311 D-type flip-flop(s).
+	inferred  29 Comparator(s).
+	inferred 1172 Multiplexer(s).
+	inferred  23 Combinational logic shifter(s).
+	inferred   3 Finite State Machine(s).
+Unit <Bomber_Contrl> synthesized.
+
+Synthesizing Unit <lcd_control>.
+    Related source file is "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\lcd_control.v".
+        Init = 2'b00
+        Set_StartLine = 2'b01
+        Clear_Screen = 2'b10
+        Copy_Image = 2'b11
+        AIR = 4'b0000
+        WALL = 4'b0001
+        STONE = 4'b0010
+        BOMB = 4'b1111
+        BOMB_EXPLODE = 4'b1000
+    Found 3-bit register for signal <X_PAGE>.
+    Found 6-bit register for signal <Y>.
+    Found 7-bit register for signal <INDEX>.
+    Found 1-bit register for signal <LCD_DI>.
+    Found 1-bit register for signal <LCD_RW>.
+    Found 8-bit register for signal <LCD_DATA>.
+    Found 1-bit register for signal <START>.
+    Found 1-bit register for signal <NEW_PAGE>.
+    Found 1-bit register for signal <NEW_COL>.
+    Found 7-bit register for signal <COL_COUNTER>.
+    Found 3-bit register for signal <PAGE_COUNTER>.
+    Found 1-bit register for signal <ENABLE>.
+    Found 1-bit register for signal <LCD_CS1>.
+    Found 1-bit register for signal <LCD_CS2>.
+    Found 160-bit register for signal <MAP>.
+    Found 6-bit register for signal <GSTATE>.
+    Found 12-bit register for signal <P1_POS>.
+    Found 12-bit register for signal <P2_POS>.
+    Found 2-bit register for signal <P1_DIR>.
+    Found 2-bit register for signal <P2_DIR>.
+    Found 2-bit register for signal <STATE>.
+    Found finite state machine <FSM_5> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | LCD_CLK (rising_edge)                          |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | BRAM                                           |
+    -----------------------------------------------------------------------
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_147_OUT> created at line 266.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_164_OUT> created at line 279.
+    Found 8-bit subtractor for signal <GND_10_o_GND_10_o_sub_166_OUT> created at line 279.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_174_OUT> created at line 288.
+    Found 8-bit subtractor for signal <GND_10_o_GND_10_o_sub_176_OUT> created at line 289.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_197_OUT> created at line 427.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_198_OUT> created at line 428.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_213_OUT> created at line 493.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_214_OUT> created at line 494.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_278_OUT> created at line 266.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_295_OUT> created at line 279.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_305_OUT> created at line 288.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_328_OUT> created at line 427.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_344_OUT> created at line 493.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_409_OUT> created at line 266.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_426_OUT> created at line 279.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_436_OUT> created at line 288.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_459_OUT> created at line 427.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_475_OUT> created at line 493.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_540_OUT> created at line 266.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_557_OUT> created at line 279.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_567_OUT> created at line 288.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_590_OUT> created at line 427.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_606_OUT> created at line 493.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_671_OUT> created at line 266.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_688_OUT> created at line 279.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_698_OUT> created at line 288.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_721_OUT> created at line 427.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_737_OUT> created at line 493.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_802_OUT> created at line 266.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_819_OUT> created at line 279.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_829_OUT> created at line 288.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_852_OUT> created at line 427.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_868_OUT> created at line 493.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_933_OUT> created at line 266.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_950_OUT> created at line 279.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_960_OUT> created at line 288.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_983_OUT> created at line 427.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_999_OUT> created at line 493.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_1060_OUT> created at line 266.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_1077_OUT> created at line 279.
+    Found 7-bit subtractor for signal <GND_10_o_GND_10_o_sub_1087_OUT> created at line 288.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_1110_OUT> created at line 427.
+    Found 10-bit subtractor for signal <GND_10_o_GND_10_o_sub_1126_OUT> created at line 493.
+    Found 7-bit adder for signal <INDEX[6]_GND_10_o_add_39_OUT> created at line 168.
+    Found 7-bit adder for signal <COL_COUNTER[6]_GND_10_o_add_40_OUT> created at line 169.
+    Found 3-bit adder for signal <X_PAGE[2]_GND_10_o_add_42_OUT> created at line 182.
+    Found 3-bit adder for signal <PAGE_COUNTER[2]_GND_10_o_add_43_OUT> created at line 184.
+    Found 6-bit adder for signal <_n2305> created at line 231.
+    Found 32-bit adder for signal <n1075> created at line 266.
+    Found 32-bit adder for signal <n1079> created at line 279.
+    Found 8-bit adder for signal <PWR_23_o_GND_10_o_add_187_OUT> created at line 366.
+    Found 8-bit adder for signal <n1929[7:0]> created at line 425.
+    Found 9-bit adder for signal <n1931[8:0]> created at line 425.
+    Found 8-bit adder for signal <n1934[7:0]> created at line 426.
+    Found 9-bit adder for signal <n1936[8:0]> created at line 426.
+    Found 16-bit adder for signal <n1104> created at line 431.
+    Found 8-bit adder for signal <n1942[7:0]> created at line 491.
+    Found 9-bit adder for signal <n1944[8:0]> created at line 491.
+    Found 8-bit adder for signal <n1947[7:0]> created at line 492.
+    Found 9-bit adder for signal <n1949[8:0]> created at line 492.
+    Found 16-bit adder for signal <n1115> created at line 497.
+    Found 6-bit adder for signal <_n2320> created at line 231.
+    Found 32-bit adder for signal <n1119> created at line 266.
+    Found 32-bit adder for signal <n1122> created at line 279.
+    Found 8-bit adder for signal <PWR_23_o_GND_10_o_add_318_OUT> created at line 366.
+    Found 16-bit adder for signal <n1136> created at line 431.
+    Found 16-bit adder for signal <n1139> created at line 497.
+    Found 6-bit adder for signal <_n2152> created at line 231.
+    Found 32-bit adder for signal <n1143> created at line 266.
+    Found 32-bit adder for signal <n1146> created at line 279.
+    Found 8-bit adder for signal <PWR_23_o_GND_10_o_add_449_OUT> created at line 366.
+    Found 16-bit adder for signal <n1160> created at line 431.
+    Found 16-bit adder for signal <n1163> created at line 497.
+    Found 6-bit adder for signal <_n2155> created at line 231.
+    Found 32-bit adder for signal <n1167> created at line 266.
+    Found 32-bit adder for signal <n1170> created at line 279.
+    Found 8-bit adder for signal <PWR_23_o_GND_10_o_add_580_OUT> created at line 366.
+    Found 16-bit adder for signal <n1184> created at line 431.
+    Found 16-bit adder for signal <n1187> created at line 497.
+    Found 6-bit adder for signal <_n2350> created at line 231.
+    Found 32-bit adder for signal <n1191> created at line 266.
+    Found 32-bit adder for signal <n1194> created at line 279.
+    Found 8-bit adder for signal <PWR_23_o_GND_10_o_add_711_OUT> created at line 366.
+    Found 16-bit adder for signal <n1208> created at line 431.
+    Found 16-bit adder for signal <n1211> created at line 497.
+    Found 6-bit adder for signal <_n2362> created at line 231.
+    Found 32-bit adder for signal <n1215> created at line 266.
+    Found 32-bit adder for signal <n1218> created at line 279.
+    Found 8-bit adder for signal <PWR_23_o_GND_10_o_add_842_OUT> created at line 366.
+    Found 16-bit adder for signal <n1232> created at line 431.
+    Found 16-bit adder for signal <n1235> created at line 497.
+    Found 6-bit adder for signal <_n2374> created at line 231.
+    Found 32-bit adder for signal <n1239> created at line 266.
+    Found 32-bit adder for signal <n1242> created at line 279.
+    Found 8-bit adder for signal <PWR_23_o_GND_10_o_add_973_OUT> created at line 366.
+    Found 16-bit adder for signal <n1256> created at line 431.
+    Found 16-bit adder for signal <n1259> created at line 497.
+    Found 32-bit adder for signal <n1262> created at line 266.
+    Found 32-bit adder for signal <n1265> created at line 279.
+    Found 8-bit adder for signal <PWR_23_o_GND_10_o_add_1100_OUT> created at line 366.
+    Found 16-bit adder for signal <n1279> created at line 431.
+    Found 16-bit adder for signal <n1282> created at line 497.
+    Found 32x5-bit multiplier for signal <n1074> created at line 266.
+    Found 32x5-bit multiplier for signal <n1077> created at line 279.
+    Found 160-bit shifter logical left for signal <n1086> created at line 291
+    Found 4x4-bit multiplier for signal <n1924> created at line 366.
+    Found 3x4-bit multiplier for signal <P1_POS[11]_PWR_23_o_MuLt_190_OUT> created at line 425.
+    Found 3x4-bit multiplier for signal <P1_POS[5]_PWR_23_o_MuLt_193_OUT> created at line 426.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_202_OUT> created at line 431.
+    Found 3x4-bit multiplier for signal <P2_POS[11]_PWR_23_o_MuLt_206_OUT> created at line 491.
+    Found 3x4-bit multiplier for signal <P2_POS[5]_PWR_23_o_MuLt_209_OUT> created at line 492.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_218_OUT> created at line 497.
+    Found 32x5-bit multiplier for signal <n1118> created at line 266.
+    Found 32x5-bit multiplier for signal <n1121> created at line 279.
+    Found 160-bit shifter logical left for signal <n1126> created at line 291
+    Found 4x4-bit multiplier for signal <n1961> created at line 366.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_333_OUT> created at line 431.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_349_OUT> created at line 497.
+    Found 32x5-bit multiplier for signal <n1142> created at line 266.
+    Found 32x5-bit multiplier for signal <n1145> created at line 279.
+    Found 160-bit shifter logical left for signal <n1150> created at line 291
+    Found 4x4-bit multiplier for signal <n1978> created at line 366.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_464_OUT> created at line 431.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_480_OUT> created at line 497.
+    Found 32x5-bit multiplier for signal <n1166> created at line 266.
+    Found 32x5-bit multiplier for signal <n1169> created at line 279.
+    Found 160-bit shifter logical left for signal <n1174> created at line 291
+    Found 4x4-bit multiplier for signal <n1995> created at line 366.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_595_OUT> created at line 431.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_611_OUT> created at line 497.
+    Found 32x5-bit multiplier for signal <n1190> created at line 266.
+    Found 32x5-bit multiplier for signal <n1193> created at line 279.
+    Found 160-bit shifter logical left for signal <n1198> created at line 291
+    Found 4x4-bit multiplier for signal <n2012> created at line 366.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_726_OUT> created at line 431.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_742_OUT> created at line 497.
+    Found 32x5-bit multiplier for signal <n1214> created at line 266.
+    Found 32x5-bit multiplier for signal <n1217> created at line 279.
+    Found 160-bit shifter logical left for signal <n1222> created at line 291
+    Found 4x4-bit multiplier for signal <n2029> created at line 366.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_857_OUT> created at line 431.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_873_OUT> created at line 497.
+    Found 32x5-bit multiplier for signal <n1238> created at line 266.
+    Found 32x5-bit multiplier for signal <n1241> created at line 279.
+    Found 160-bit shifter logical left for signal <n1246> created at line 291
+    Found 4x4-bit multiplier for signal <n2046> created at line 366.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_988_OUT> created at line 431.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_1004_OUT> created at line 497.
+    Found 32x5-bit multiplier for signal <n1261> created at line 266.
+    Found 32x5-bit multiplier for signal <n1264> created at line 279.
+    Found 160-bit shifter logical left for signal <n1269> created at line 291
+    Found 4x4-bit multiplier for signal <n2061> created at line 366.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_1115_OUT> created at line 431.
+    Found 10x5-bit multiplier for signal <GND_10_o_GND_10_o_MuLt_1131_OUT> created at line 497.
+    Found 1024x1-bit Read Only RAM for signal <GND_10_o_X_9_o_Mux_150_o>
+    Found 1024x1-bit Read Only RAM for signal <GND_10_o_X_9_o_Mux_281_o>
+    Found 1024x1-bit Read Only RAM for signal <GND_10_o_X_9_o_Mux_412_o>
+    Found 1024x1-bit Read Only RAM for signal <GND_10_o_X_9_o_Mux_543_o>
+    Found 1024x1-bit Read Only RAM for signal <GND_10_o_X_9_o_Mux_674_o>
+    Found 1024x1-bit Read Only RAM for signal <GND_10_o_X_9_o_Mux_805_o>
+    Found 1024x1-bit Read Only RAM for signal <GND_10_o_X_9_o_Mux_936_o>
+    Found 1024x1-bit Read Only RAM for signal <GND_10_o_X_9_o_Mux_1063_o>
+    Found 4x8-bit Read Only RAM for signal <_n8643>
+    Found 4x8-bit Read Only RAM for signal <_n8648>
+    Found 2048x5-bit Read Only RAM for signal <_n10697>
+    Found 1024x3-bit Read Only RAM for signal <_n11722>
+    Found 2048x5-bit Read Only RAM for signal <_n14971>
+    Found 2048x5-bit Read Only RAM for signal <_n17020>
+    Found 1024x3-bit Read Only RAM for signal <_n18045>
+    Found 2048x5-bit Read Only RAM for signal <_n27791>
+    Found 1024x3-bit Read Only RAM for signal <_n28816>
+    Found 2048x5-bit Read Only RAM for signal <_n30865>
+    Found 1024x3-bit Read Only RAM for signal <_n31890>
+    Found 2048x5-bit Read Only RAM for signal <_n33939>
+    Found 1024x3-bit Read Only RAM for signal <_n34964>
+    Found 1024x3-bit Read Only RAM for signal <_n35989>
+    Found 2048x5-bit Read Only RAM for signal <_n38038>
+    Found 1024x3-bit Read Only RAM for signal <_n39063>
+    Found 2048x5-bit Read Only RAM for signal <_n43907>
+    Found 1024x3-bit Read Only RAM for signal <_n44932>
+    Found 1-bit 3-to-1 multiplexer for signal <NEW_PAGE_NEXT> created at line 79.
+    Found 8-bit 4-to-1 multiplexer for signal <LCD_DATA_NEXT> created at line 79.
+    Found 1-bit 4-to-1 multiplexer for signal <START_NEXT> created at line 79.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[2]_GND_10_o_Mux_151_o> created at line 248.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[0]_GND_10_o_Mux_168_o> created at line 242.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[2]_GND_10_o_Mux_282_o> created at line 248.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[0]_GND_10_o_Mux_299_o> created at line 242.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[2]_GND_10_o_Mux_413_o> created at line 248.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[0]_GND_10_o_Mux_430_o> created at line 242.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[2]_GND_10_o_Mux_544_o> created at line 248.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[0]_GND_10_o_Mux_561_o> created at line 242.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[2]_GND_10_o_Mux_675_o> created at line 248.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[0]_GND_10_o_Mux_692_o> created at line 242.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[2]_GND_10_o_Mux_806_o> created at line 248.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[0]_GND_10_o_Mux_823_o> created at line 242.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[2]_GND_10_o_Mux_937_o> created at line 248.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[0]_GND_10_o_Mux_954_o> created at line 242.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[2]_GND_10_o_Mux_1064_o> created at line 248.
+    Found 1-bit 4-to-1 multiplexer for signal <GSTATE[0]_GND_10_o_Mux_1081_o> created at line 242.
+    Found 7-bit comparator greater for signal <COL_COUNTER[6]_PWR_23_o_LessThan_39_o> created at line 162
+    Found 7-bit comparator greater for signal <PWR_23_o_INDEX[6]_LessThan_106_o> created at line 239
+    Found 6-bit comparator greater for signal <X_PAGE[2]_GND_10_o_LessThan_107_o> created at line 240
+    Found 6-bit comparator lessequal for signal <n0157> created at line 240
+    Found 32-bit comparator lessequal for signal <n0209> created at line 430
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_200_o> created at line 430
+    Found 32-bit comparator lessequal for signal <n0213> created at line 430
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_202_o> created at line 430
+    Found 32-bit comparator lessequal for signal <n0231> created at line 496
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_216_o> created at line 496
+    Found 32-bit comparator lessequal for signal <n0235> created at line 496
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_218_o> created at line 496
+    Found 6-bit comparator greater for signal <X_PAGE[2]_GND_10_o_LessThan_238_o> created at line 240
+    Found 6-bit comparator lessequal for signal <n0262> created at line 240
+    Found 32-bit comparator lessequal for signal <n0303> created at line 430
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_331_o> created at line 430
+    Found 32-bit comparator lessequal for signal <n0314> created at line 496
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_347_o> created at line 496
+    Found 6-bit comparator greater for signal <X_PAGE[2]_GND_10_o_LessThan_369_o> created at line 240
+    Found 6-bit comparator lessequal for signal <n0342> created at line 240
+    Found 32-bit comparator lessequal for signal <n0383> created at line 430
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_462_o> created at line 430
+    Found 32-bit comparator lessequal for signal <n0394> created at line 496
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_478_o> created at line 496
+    Found 6-bit comparator greater for signal <X_PAGE[2]_GND_10_o_LessThan_500_o> created at line 240
+    Found 6-bit comparator lessequal for signal <n0422> created at line 240
+    Found 32-bit comparator lessequal for signal <n0463> created at line 430
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_593_o> created at line 430
+    Found 32-bit comparator lessequal for signal <n0474> created at line 496
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_609_o> created at line 496
+    Found 6-bit comparator greater for signal <X_PAGE[2]_GND_10_o_LessThan_631_o> created at line 240
+    Found 6-bit comparator lessequal for signal <n0502> created at line 240
+    Found 32-bit comparator lessequal for signal <n0543> created at line 430
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_724_o> created at line 430
+    Found 32-bit comparator lessequal for signal <n0554> created at line 496
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_740_o> created at line 496
+    Found 6-bit comparator greater for signal <X_PAGE[2]_GND_10_o_LessThan_762_o> created at line 240
+    Found 6-bit comparator lessequal for signal <n0582> created at line 240
+    Found 32-bit comparator lessequal for signal <n0623> created at line 430
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_855_o> created at line 430
+    Found 32-bit comparator lessequal for signal <n0634> created at line 496
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_871_o> created at line 496
+    Found 6-bit comparator greater for signal <X_PAGE[2]_GND_10_o_LessThan_893_o> created at line 240
+    Found 6-bit comparator lessequal for signal <n0662> created at line 240
+    Found 32-bit comparator lessequal for signal <n0703> created at line 430
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_986_o> created at line 430
+    Found 32-bit comparator lessequal for signal <n0714> created at line 496
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_1002_o> created at line 496
+    Found 6-bit comparator greater for signal <X_PAGE[2]_GND_10_o_LessThan_1020_o> created at line 240
+    Found 6-bit comparator lessequal for signal <n0735> created at line 240
+    Found 32-bit comparator lessequal for signal <n0776> created at line 430
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_1113_o> created at line 430
+    Found 32-bit comparator lessequal for signal <n0787> created at line 496
+    Found 32-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_1129_o> created at line 496
+    Summary:
+	inferred  26 RAM(s).
+	inferred  44 Multiplier(s).
+	inferred 103 Adder/Subtractor(s).
+	inferred 230 D-type flip-flop(s).
+	inferred  54 Comparator(s).
+	inferred 995 Multiplexer(s).
+	inferred   8 Combinational logic shifter(s).
+	inferred   1 Finite State Machine(s).
+Unit <lcd_control> synthesized.
+
+Synthesizing Unit <div_32u_4u>.
+    Related source file is "".
+    Found 36-bit adder for signal <n2401> created at line 0.
+    Found 36-bit adder for signal <GND_12_o_b[3]_add_1_OUT> created at line 0.
+    Found 35-bit adder for signal <n2405> created at line 0.
+    Found 35-bit adder for signal <GND_12_o_b[3]_add_3_OUT> created at line 0.
+    Found 34-bit adder for signal <n2409> created at line 0.
+    Found 34-bit adder for signal <GND_12_o_b[3]_add_5_OUT> created at line 0.
+    Found 33-bit adder for signal <n2413> created at line 0.
+    Found 33-bit adder for signal <GND_12_o_b[3]_add_7_OUT> created at line 0.
+    Found 32-bit adder for signal <n2417> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[3]_add_9_OUT> created at line 0.
+    Found 32-bit adder for signal <n2421> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <n2425> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <n2429> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <n2433> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <n2437> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <n2441> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <n2445> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <n2449> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <n2453> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <n2457> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <n2461> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <n2465> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <n2469> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <n2473> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <n2477> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <n2481> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <n2485> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <n2489> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <n2493> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <n2497> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <n2501> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <n2505> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <n2509> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <n2513> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <n2517> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_59_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <n2521> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_61_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <n2525> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_12_o_add_63_OUT[31:0]> created at line 0.
+    Found 36-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  64 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_32u_4u> synthesized.
+
+Synthesizing Unit <mod_32u_4u>.
+    Related source file is "".
+    Found 36-bit adder for signal <n2401> created at line 0.
+    Found 36-bit adder for signal <GND_13_o_b[3]_add_1_OUT> created at line 0.
+    Found 35-bit adder for signal <n2405> created at line 0.
+    Found 35-bit adder for signal <GND_13_o_b[3]_add_3_OUT> created at line 0.
+    Found 34-bit adder for signal <n2409> created at line 0.
+    Found 34-bit adder for signal <GND_13_o_b[3]_add_5_OUT> created at line 0.
+    Found 33-bit adder for signal <n2413> created at line 0.
+    Found 33-bit adder for signal <GND_13_o_b[3]_add_7_OUT> created at line 0.
+    Found 32-bit adder for signal <n2417> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[3]_add_9_OUT> created at line 0.
+    Found 32-bit adder for signal <n2421> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <n2425> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <n2429> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <n2433> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <n2437> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <n2441> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <n2445> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <n2449> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <n2453> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <n2457> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <n2461> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <n2465> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <n2469> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <n2473> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <n2477> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <n2481> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <n2485> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <n2489> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <n2493> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <n2497> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <n2501> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <n2505> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <n2509> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <n2513> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <n2517> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <n2521> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <n2525> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_63_OUT> created at line 0.
+    Found 32-bit adder for signal <n2529> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_13_o_add_65_OUT> created at line 0.
+    Found 36-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  66 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 1025 Multiplexer(s).
+Unit <mod_32u_4u> synthesized.
+
+Synthesizing Unit <transmitter>.
+    Related source file is "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\transmitter.v".
+        S_INIT = 2'b00
+        S_READY = 2'b01
+        S_TRANS = 2'b10
+    Found 2-bit register for signal <STATE>.
+    Found 6-bit register for signal <BIT_COUNTER>.
+    Found 1-bit register for signal <SYNC>.
+    Found 49-bit register for signal <BUFFER>.
+    Found 1-bit register for signal <S_OUT>.
+    Found 6-bit adder for signal <BIT_COUNTER[5]_GND_17_o_add_11_OUT> created at line 69.
+    Found 1-bit 49-to-1 multiplexer for signal <BIT_COUNTER[5]_X_10_o_Mux_12_o> created at line 70.
+    Found 2-bit 4-to-1 multiplexer for signal <STATE_NEXT> created at line 48.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <STATE> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+Unit <transmitter> synthesized.
+
+Synthesizing Unit <receiver>.
+    Related source file is "D:\NTHU\101 Spring\Hardware Lab\FinalProject\Bomber\receiver.v".
+    Found 16-bit register for signal <DATA_OUT>.
+    Found 1-bit register for signal <RECV_OK>.
+    Found 15-bit register for signal <RECV_DATA>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <receiver> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 27
+ 1024x1-bit single-port Read Only RAM                  : 8
+ 1024x3-bit single-port Read Only RAM                  : 8
+ 2048x5-bit single-port Read Only RAM                  : 8
+ 4x4-bit single-port Read Only RAM                     : 1
+ 4x8-bit single-port Read Only RAM                     : 2
+# Multipliers                                          : 45
+ 10x5-bit multiplier                                   : 16
+ 2x1-bit multiplier                                    : 1
+ 32x5-bit multiplier                                   : 16
+ 4x3-bit multiplier                                    : 4
+ 4x4-bit multiplier                                    : 8
+# Adders/Subtractors                                   : 1327
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 18
+ 16-bit adder                                          : 16
+ 2-bit adder                                           : 1
+ 2-bit subtractor                                      : 1
+ 25-bit addsub                                         : 1
+ 3-bit adder                                           : 10
+ 32-bit adder                                          : 1048
+ 32-bit subtractor                                     : 2
+ 33-bit adder                                          : 36
+ 34-bit adder                                          : 36
+ 35-bit adder                                          : 36
+ 36-bit adder                                          : 36
+ 4-bit adder                                           : 5
+ 4-bit subtractor                                      : 4
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 11
+ 7-bit adder                                           : 6
+ 7-bit subtractor                                      : 26
+ 8-bit adder                                           : 12
+ 8-bit subtractor                                      : 8
+ 9-bit adder                                           : 10
+# Registers                                            : 87
+ 1-bit register                                        : 41
+ 12-bit register                                       : 2
+ 15-bit register                                       : 1
+ 16-bit register                                       : 3
+ 160-bit register                                      : 2
+ 2-bit register                                        : 11
+ 25-bit register                                       : 1
+ 3-bit register                                        : 10
+ 4-bit register                                        : 1
+ 40-bit register                                       : 1
+ 49-bit register                                       : 1
+ 5-bit register                                        : 2
+ 6-bit register                                        : 8
+ 7-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 682
+ 1-bit comparator equal                                : 2
+ 3-bit comparator greater                              : 7
+ 32-bit comparator equal                               : 11
+ 32-bit comparator greater                             : 18
+ 32-bit comparator lessequal                           : 540
+ 33-bit comparator lessequal                           : 18
+ 34-bit comparator lessequal                           : 18
+ 35-bit comparator lessequal                           : 18
+ 36-bit comparator lessequal                           : 18
+ 4-bit comparator greater                              : 1
+ 5-bit comparator equal                                : 3
+ 6-bit comparator greater                              : 11
+ 6-bit comparator lessequal                            : 8
+ 7-bit comparator equal                                : 6
+ 7-bit comparator greater                              : 3
+# Multiplexers                                         : 19787
+ 1-bit 160-to-1 multiplexer                            : 1
+ 1-bit 2-to-1 multiplexer                              : 18531
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 17
+ 1-bit 40-to-1 multiplexer                             : 1
+ 1-bit 49-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+ 16-bit 4-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 44
+ 2-bit 4-to-1 multiplexer                              : 2
+ 25-bit 2-to-1 multiplexer                             : 6
+ 3-bit 2-to-1 multiplexer                              : 21
+ 3-bit 4-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 216
+ 4-bit 2-to-1 multiplexer                              : 900
+ 40-bit 2-to-1 multiplexer                             : 3
+ 5-bit 2-to-1 multiplexer                              : 3
+ 6-bit 2-to-1 multiplexer                              : 21
+ 7-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 8
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 31
+ 160-bit shifter logical left                          : 25
+ 9-bit shifter logical right                           : 6
+# Tristates                                            : 4
+ 1-bit tristate buffer                                 : 4
+# FSMs                                                 : 5
+# Xors                                                 : 3
+ 1-bit xor16                                           : 1
+ 1-bit xor5                                            : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Bomber_Contrl>.
+The following registers are absorbed into counter <INDEX>: 1 register on signal <INDEX>.
+The following registers are absorbed into counter <SCAN_PAUSE>: 1 register on signal <SCAN_PAUSE>.
+The following registers are absorbed into counter <TR_COUNTER>: 1 register on signal <TR_COUNTER>.
+Unit <Bomber_Contrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk_div>.
+The following registers are absorbed into counter <count_1MHz>: 1 register on signal <count_1MHz>.
+The following registers are absorbed into counter <count_100KHz>: 1 register on signal <count_100KHz>.
+The following registers are absorbed into counter <count_10KHz>: 1 register on signal <count_10KHz>.
+The following registers are absorbed into counter <count_1KHz>: 1 register on signal <count_1KHz>.
+The following registers are absorbed into counter <count_100Hz>: 1 register on signal <count_100Hz>.
+The following registers are absorbed into counter <count_10Hz>: 1 register on signal <count_10Hz>.
+The following registers are absorbed into counter <count_1Hz>: 1 register on signal <count_1Hz>.
+Unit <clk_div> synthesized (advanced).
+
+Synthesizing (advanced) Unit <keypad_scanner>.
+The following registers are absorbed into counter <sel>: 1 register on signal <sel>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0105> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <sel>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <keypad_scanner> synthesized (advanced).
+
+Synthesizing (advanced) Unit <lcd_control>.
+The following registers are absorbed into counter <INDEX>: 1 register on signal <INDEX>.
+INFO:Xst:3226 - The RAM <Mram__n8648> will be implemented as a BLOCK RAM, absorbing the following register(s): <P1_DIR>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <RENDER_CLK>    | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <RENDER_DATA<14:15>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram__n8643> will be implemented as a BLOCK RAM, absorbing the following register(s): <P2_DIR>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <RENDER_CLK>    | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <RENDER_DATA<14:15>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+	Multiplier <Mmult_n1924> in block <lcd_control> and adder/subtractor <Madd_PWR_23_o_GND_10_o_add_187_OUT> in block <lcd_control> are combined into a MAC<Maddsub_n1924>.
+	Multiplier <Mmult_n1978> in block <lcd_control> and adder/subtractor <Madd_PWR_23_o_GND_10_o_add_449_OUT> in block <lcd_control> are combined into a MAC<Maddsub_n1978>.
+	Multiplier <Mmult_n1961> in block <lcd_control> and adder/subtractor <Madd_PWR_23_o_GND_10_o_add_318_OUT> in block <lcd_control> are combined into a MAC<Maddsub_n1961>.
+	Multiplier <Mmult_n1995> in block <lcd_control> and adder/subtractor <Madd_PWR_23_o_GND_10_o_add_580_OUT> in block <lcd_control> are combined into a MAC<Maddsub_n1995>.
+	Multiplier <Mmult_n2012> in block <lcd_control> and adder/subtractor <Madd_PWR_23_o_GND_10_o_add_711_OUT> in block <lcd_control> are combined into a MAC<Maddsub_n2012>.
+	Multiplier <Mmult_n2029> in block <lcd_control> and adder/subtractor <Madd_PWR_23_o_GND_10_o_add_842_OUT> in block <lcd_control> are combined into a MAC<Maddsub_n2029>.
+	Multiplier <Mmult_n2046> in block <lcd_control> and adder/subtractor <Madd_PWR_23_o_GND_10_o_add_973_OUT> in block <lcd_control> are combined into a MAC<Maddsub_n2046>.
+	Multiplier <Mmult_n2061> in block <lcd_control> and adder/subtractor <Madd_PWR_23_o_GND_10_o_add_1100_OUT> in block <lcd_control> are combined into a MAC<Maddsub_n2061>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_202_OUT> in block <lcd_control> and adder/subtractor <Madd_n1104_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_202_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_333_OUT> in block <lcd_control> and adder/subtractor <Madd_n1136_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_333_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_464_OUT> in block <lcd_control> and adder/subtractor <Madd_n1160_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_464_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_726_OUT> in block <lcd_control> and adder/subtractor <Madd_n1208_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_726_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_857_OUT> in block <lcd_control> and adder/subtractor <Madd_n1232_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_857_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_595_OUT> in block <lcd_control> and adder/subtractor <Madd_n1184_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_595_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_988_OUT> in block <lcd_control> and adder/subtractor <Madd_n1256_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_988_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_218_OUT> in block <lcd_control> and adder/subtractor <Madd_n1115_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_218_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_349_OUT> in block <lcd_control> and adder/subtractor <Madd_n1139_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_349_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_742_OUT> in block <lcd_control> and adder/subtractor <Madd_n1211_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_742_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_480_OUT> in block <lcd_control> and adder/subtractor <Madd_n1163_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_480_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_611_OUT> in block <lcd_control> and adder/subtractor <Madd_n1187_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_611_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_873_OUT> in block <lcd_control> and adder/subtractor <Madd_n1235_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_873_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_1004_OUT> in block <lcd_control> and adder/subtractor <Madd_n1259_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_1004_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_1115_OUT> in block <lcd_control> and adder/subtractor <Madd_n1279_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_1115_OUT>.
+	Multiplier <Mmult_GND_10_o_GND_10_o_MuLt_1131_OUT> in block <lcd_control> and adder/subtractor <Madd_n1282_Madd> in block <lcd_control> are combined into a MAC<Maddsub_GND_10_o_GND_10_o_MuLt_1131_OUT>.
+	Multiplier <Mmult_P1_POS[11]_PWR_23_o_MuLt_190_OUT> in block <lcd_control> and adder/subtractor <Madd_n1929[7:0]> in block <lcd_control> are combined into a MAC<Maddsub_P1_POS[11]_PWR_23_o_MuLt_190_OUT>.
+	The following registers are also absorbed by the MAC: <P1_POS> in block <lcd_control>.
+	Multiplier <Mmult_P2_POS[11]_PWR_23_o_MuLt_206_OUT> in block <lcd_control> and adder/subtractor <Madd_n1942[7:0]> in block <lcd_control> are combined into a MAC<Maddsub_P2_POS[11]_PWR_23_o_MuLt_206_OUT>.
+	The following registers are also absorbed by the MAC: <P2_POS> in block <lcd_control>.
+	Multiplier <Mmult_P1_POS[5]_PWR_23_o_MuLt_193_OUT> in block <lcd_control> and adder/subtractor <Madd_n1934[7:0]> in block <lcd_control> are combined into a MAC<Maddsub_P1_POS[5]_PWR_23_o_MuLt_193_OUT>.
+	The following registers are also absorbed by the MAC: <P1_POS> in block <lcd_control>.
+	Multiplier <Mmult_P2_POS[5]_PWR_23_o_MuLt_209_OUT> in block <lcd_control> and adder/subtractor <Madd_n1947[7:0]> in block <lcd_control> are combined into a MAC<Maddsub_P2_POS[5]_PWR_23_o_MuLt_209_OUT>.
+	The following registers are also absorbed by the MAC: <P2_POS> in block <lcd_control>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_10_o_X_9_o_Mux_150_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1075>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n27791> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 5-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1079>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n28816> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1079<9:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_10_o_X_9_o_Mux_281_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1119>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n30865> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 5-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1122>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n31890> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1122<9:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_10_o_X_9_o_Mux_412_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1143>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n10697> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 5-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1146>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n11722> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1146<9:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_10_o_X_9_o_Mux_543_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1167>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n33939> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 5-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1170>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n34964> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1170<9:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_10_o_X_9_o_Mux_674_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1191>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n14971> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 5-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1194>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n35989> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1194<9:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_10_o_X_9_o_Mux_805_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1215>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n17020> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 5-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1218>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n18045> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1218<9:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_10_o_X_9_o_Mux_936_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1239>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n38038> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 5-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1242>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n39063> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1242<9:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_10_o_X_9_o_Mux_1063_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1262>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n43907> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 5-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1265>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n44932> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n1265<9:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <lcd_control> synthesized (advanced).
+WARNING:Xst:2677 - Node <P1_POS_0> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P1_POS_1> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P1_POS_2> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P1_POS_6> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P1_POS_7> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P1_POS_8> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P2_POS_0> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P2_POS_1> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P2_POS_2> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P2_POS_6> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P2_POS_7> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <P2_POS_8> of sequential type is unconnected in block <lcd_control>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 27
+ 1024x1-bit single-port distributed Read Only RAM      : 8
+ 1024x3-bit single-port distributed Read Only RAM      : 8
+ 2048x5-bit single-port distributed Read Only RAM      : 8
+ 4x4-bit single-port distributed Read Only RAM         : 1
+ 4x8-bit single-port block Read Only RAM               : 2
+# MACs                                                 : 28
+ 10x5-to-8-bit MAC                                     : 16
+ 4x3-to-8-bit MAC                                      : 4
+ 4x4-to-8-bit MAC                                      : 8
+# Multipliers                                          : 17
+ 2x1-bit multiplier                                    : 1
+ 32x5-bit multiplier                                   : 16
+# Adders/Subtractors                                   : 702
+ 10-bit adder                                          : 8
+ 10-bit subtractor                                     : 18
+ 11-bit adder                                          : 8
+ 25-bit addsub                                         : 1
+ 3-bit adder                                           : 5
+ 32-bit adder carry in                                 : 576
+ 32-bit subtractor                                     : 2
+ 4-bit adder                                           : 5
+ 4-bit adder carry in                                  : 9
+ 4-bit subtractor                                      : 4
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 12
+ 7-bit adder                                           : 5
+ 7-bit subtractor                                      : 26
+ 8-bit adder                                           : 10
+ 8-bit subtractor                                      : 8
+ 9-bit adder                                           : 4
+# Counters                                             : 12
+ 2-bit down counter                                    : 1
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 7
+ 5-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 639
+ Flip-Flops                                            : 639
+# Comparators                                          : 682
+ 1-bit comparator equal                                : 2
+ 3-bit comparator greater                              : 7
+ 32-bit comparator equal                               : 11
+ 32-bit comparator greater                             : 18
+ 32-bit comparator lessequal                           : 540
+ 33-bit comparator lessequal                           : 18
+ 34-bit comparator lessequal                           : 18
+ 35-bit comparator lessequal                           : 18
+ 36-bit comparator lessequal                           : 18
+ 4-bit comparator greater                              : 1
+ 5-bit comparator equal                                : 3
+ 6-bit comparator greater                              : 11
+ 6-bit comparator lessequal                            : 8
+ 7-bit comparator equal                                : 6
+ 7-bit comparator greater                              : 3
+# Multiplexers                                         : 19753
+ 1-bit 160-to-1 multiplexer                            : 1
+ 1-bit 2-to-1 multiplexer                              : 18499
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 17
+ 1-bit 40-to-1 multiplexer                             : 1
+ 1-bit 49-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+ 16-bit 4-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 43
+ 2-bit 4-to-1 multiplexer                              : 2
+ 25-bit 2-to-1 multiplexer                             : 6
+ 3-bit 2-to-1 multiplexer                              : 20
+ 3-bit 4-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 216
+ 4-bit 2-to-1 multiplexer                              : 900
+ 40-bit 2-to-1 multiplexer                             : 3
+ 5-bit 2-to-1 multiplexer                              : 3
+ 6-bit 2-to-1 multiplexer                              : 21
+ 7-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 8
+ 8-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 31
+ 160-bit shifter logical left                          : 25
+ 9-bit shifter logical right                           : 6
+# FSMs                                                 : 5
+# Xors                                                 : 3
+ 1-bit xor16                                           : 1
+ 1-bit xor5                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <BUFFER_42> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_10> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_43> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_11> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_44> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_12> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_45> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_13> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_46> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_14> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_47> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_15> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_32> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_0> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_33> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_1> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_34> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_2> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_35> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_3> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_36> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_4> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_37> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_5> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_38> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_6> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_39> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_7> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_40> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_8> 
+INFO:Xst:2261 - The FF/Latch <BUFFER_41> in Unit <transmitter> is equivalent to the following FF/Latch, which will be removed : <BUFFER_9> 
+WARNING:Xst:1810 - Unable to fit FSM <state> in BRAM (reset and power-up states are different).
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <key_scn/FSM_0> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+-------------------
+Implementing FSM <MFsm> on signal <TR_STATE> on BRAM.
+WARNING:Xst:1808 - Unable to fit FSM <STATE> in BRAM (there are not enough BRAM in this device).
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <game_logic/FSM_1> on signal <STATE[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 011   | 011
+ 100   | 100
+ 010   | 010
+ 101   | 101
+-------------------
+Implementing FSM <MFsm> on signal <SCAN_DIR> on BRAM.
+INFO:Xst:2697 - Unit <lcd_control> : the RAMs <Mram__n8643>, <Mram__n8648> are packed into the single block RAM <Mram__n86431>
+Implementing FSM <MFsm> on signal <STATE> on BRAM.
+WARNING:Xst:2677 - Node <Mmult_n10771> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:2677 - Node <Mmult_n10741> of sequential type is unconnected in block <lcd_control>.
+WARNING:Xst:1426 - The value init of the FF/Latch state_FSM_FFd2 hinder the constant cleaning in the block keypad_scanner.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2677 - Node <keys_pressed_15> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_14> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_13> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_8> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_7> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_5> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_4> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_3> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_2> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_1> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:2677 - Node <keys_pressed_0> of sequential type is unconnected in block <keypad_scanner>.
+WARNING:Xst:1710 - FF/Latch <LCD_RW> (without init value) has a constant value of 0 in block <lcd_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Maddsub_P1_POS[11]_PWR_23_o_MuLt_190_OUT1_3> (without init value) has a constant value of 0 in block <lcd_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Maddsub_P2_POS[11]_PWR_23_o_MuLt_206_OUT1_3> (without init value) has a constant value of 0 in block <lcd_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Maddsub_P1_POS[5]_PWR_23_o_MuLt_193_OUT1_3> (without init value) has a constant value of 0 in block <lcd_control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Maddsub_P2_POS[5]_PWR_23_o_MuLt_209_OUT1_3> (without init value) has a constant value of 0 in block <lcd_control>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <receiver> ...
+
+Optimizing unit <top> ...
+
+Optimizing unit <clk_div> ...
+
+Optimizing unit <Bomber_Contrl> ...
+
+Optimizing unit <transmitter> ...
+
+Optimizing unit <lcd_control> ...
+WARNING:Xst:2677 - Node <c_div/count_100Hz_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/count_100Hz_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/count_100Hz_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/count_10Hz_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/count_10Hz_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/count_10Hz_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/count_1Hz_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/count_1Hz_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/count_1Hz_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/clock_1Hz> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/clock_1Hz_int> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/clock_10Hz> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/clock_10Hz_int> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/clock_100Hz> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/clock_100Hz_int> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <c_div/clock_10KHz> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+WARNING:Xst:1426 - The value init of the FF/Latch key_scn/state_FSM_FFd2 hinder the constant cleaning in the block top.
+   You should achieve better results by setting this init to 1.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 170.
+Optimizing block <top> to meet ratio 100 (+ 5) of 2278 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <top>, final ratio is 175.
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_174/Mcompar_BUS_0031_INV_2259_o_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_305/Mcompar_BUS_0031_INV_2259_o_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_436/Mcompar_BUS_0031_INV_2259_o_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_567/Mcompar_BUS_0031_INV_2259_o_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_698/Mcompar_BUS_0031_INV_2259_o_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_829/Mcompar_BUS_0031_INV_2259_o_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_170/Mcompar_o<2>_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_301/Mcompar_o<2>_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_432/Mcompar_o<2>_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_563/Mcompar_o<2>_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_694/Mcompar_o<2>_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_825/Mcompar_o<2>_cy<0>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_174/Madd_a[31]_GND_13_o_add_61_OUT_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_305/Madd_a[31]_GND_13_o_add_61_OUT_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_436/Madd_a[31]_GND_13_o_add_61_OUT_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_567/Madd_a[31]_GND_13_o_add_61_OUT_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_698/Madd_a[31]_GND_13_o_add_61_OUT_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_829/Madd_a[31]_GND_13_o_add_61_OUT_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_170/Madd_a[31]_GND_12_o_add_61_OUT[31:0]_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_301/Madd_a[31]_GND_12_o_add_61_OUT[31:0]_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_432/Madd_a[31]_GND_12_o_add_61_OUT[31:0]_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_563/Madd_a[31]_GND_12_o_add_61_OUT[31:0]_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_694/Madd_a[31]_GND_12_o_add_61_OUT[31:0]_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_825/Madd_a[31]_GND_12_o_add_61_OUT[31:0]_Madd_cy<4>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_174/Madd_a[31]_GND_13_o_add_63_OUT_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_305/Madd_a[31]_GND_13_o_add_63_OUT_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_436/Madd_a[31]_GND_13_o_add_63_OUT_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_567/Madd_a[31]_GND_13_o_add_63_OUT_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_698/Madd_a[31]_GND_13_o_add_63_OUT_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_829/Madd_a[31]_GND_13_o_add_63_OUT_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_170/Madd_a[31]_GND_12_o_add_63_OUT[31:0]_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_301/Madd_a[31]_GND_12_o_add_63_OUT[31:0]_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_432/Madd_a[31]_GND_12_o_add_63_OUT[31:0]_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_563/Madd_a[31]_GND_12_o_add_63_OUT[31:0]_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_694/Madd_a[31]_GND_12_o_add_63_OUT[31:0]_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_825/Madd_a[31]_GND_12_o_add_63_OUT[31:0]_Madd_cy<3>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_176/Madd_a[31]_GND_13_o_add_25_OUT_Madd_cy<22>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_172/Madd_a[31]_GND_12_o_add_25_OUT_Madd_cy<22>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_960/Madd_a[31]_GND_13_o_add_25_OUT_Madd_cy<22>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_mod_1087/Madd_a[31]_GND_13_o_add_25_OUT_Madd_cy<22>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_956/Madd_a[31]_GND_12_o_add_25_OUT_Madd_cy<22>
+Forward register balancing over carry chain lcd_ctrl/GND_10_o_PWR_23_o_div_1083/Madd_a[31]_GND_12_o_add_25_OUT_Madd_cy<22>
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_174/Mcompar_BUS_0031_INV_2259_o_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_174/Mcompar_BUS_0031_INV_2259_o_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_174/Mcompar_BUS_0031_INV_2259_o_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_174/Mcompar_BUS_0031_INV_2259_o_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_174/Mcompar_BUS_0031_INV_2259_o_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_305/Mcompar_BUS_0031_INV_2259_o_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_305/Mcompar_BUS_0031_INV_2259_o_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_305/Mcompar_BUS_0031_INV_2259_o_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_305/Mcompar_BUS_0031_INV_2259_o_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_305/Mcompar_BUS_0031_INV_2259_o_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_436/Mcompar_BUS_0031_INV_2259_o_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_436/Mcompar_BUS_0031_INV_2259_o_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_436/Mcompar_BUS_0031_INV_2259_o_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_436/Mcompar_BUS_0031_INV_2259_o_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_436/Mcompar_BUS_0031_INV_2259_o_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_567/Mcompar_BUS_0031_INV_2259_o_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_567/Mcompar_BUS_0031_INV_2259_o_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_567/Mcompar_BUS_0031_INV_2259_o_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_567/Mcompar_BUS_0031_INV_2259_o_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_567/Mcompar_BUS_0031_INV_2259_o_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_698/Mcompar_BUS_0031_INV_2259_o_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_698/Mcompar_BUS_0031_INV_2259_o_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_698/Mcompar_BUS_0031_INV_2259_o_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_698/Mcompar_BUS_0031_INV_2259_o_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_698/Mcompar_BUS_0031_INV_2259_o_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_829/Mcompar_BUS_0031_INV_2259_o_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_829/Mcompar_BUS_0031_INV_2259_o_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_829/Mcompar_BUS_0031_INV_2259_o_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_829/Mcompar_BUS_0031_INV_2259_o_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_mod_829/Mcompar_BUS_0031_INV_2259_o_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_170/Mcompar_o<2>_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_170/Mcompar_o<2>_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_170/Mcompar_o<2>_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_170/Mcompar_o<2>_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_170/Mcompar_o<2>_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_301/Mcompar_o<2>_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_301/Mcompar_o<2>_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_301/Mcompar_o<2>_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_301/Mcompar_o<2>_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_301/Mcompar_o<2>_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_432/Mcompar_o<2>_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_432/Mcompar_o<2>_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_432/Mcompar_o<2>_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_432/Mcompar_o<2>_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_432/Mcompar_o<2>_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_563/Mcompar_o<2>_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_563/Mcompar_o<2>_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_563/Mcompar_o<2>_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_563/Mcompar_o<2>_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_563/Mcompar_o<2>_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_694/Mcompar_o<2>_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_694/Mcompar_o<2>_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_694/Mcompar_o<2>_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_694/Mcompar_o<2>_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_694/Mcompar_o<2>_cy<5>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_825/Mcompar_o<2>_cy<1>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_825/Mcompar_o<2>_cy<2>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_825/Mcompar_o<2>_cy<3>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_825/Mcompar_o<2>_cy<4>_FRB> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <lcd_ctrl/GND_10_o_PWR_23_o_div_825/Mcompar_o<2>_cy<5>_FRB> of sequential type is unconnected in block <top>.
+Replicating register lcd_ctrl/LCD_DATA_7 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_DATA_6 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_DATA_5 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_DATA_4 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_DATA_3 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_DATA_2 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_DATA_1 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_DATA_0 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_CS1 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_CS2 to handle IOB=TRUE attribute
+Replicating register lcd_ctrl/LCD_DI to handle IOB=TRUE attribute
+
+FlipFlop c_div/clock_1MHz has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1419
+ Flip-Flops                                            : 1419
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 21295
+#      GND                         : 21
+#      INV                         : 65
+#      LUT1                        : 80
+#      LUT2                        : 946
+#      LUT3                        : 1658
+#      LUT4                        : 1077
+#      LUT5                        : 5181
+#      LUT6                        : 4794
+#      MUXCY                       : 3781
+#      MUXF7                       : 170
+#      MUXF8                       : 3
+#      VCC                         : 22
+#      XORCY                       : 3497
+# FlipFlops/Latches                : 1419
+#      FD                          : 53
+#      FDE                         : 1262
+#      FDR                         : 23
+#      FDRE                        : 81
+# RAMS                             : 4
+#      RAMB16BWER                  : 1
+#      RAMB8BWER                   : 3
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 6
+#      OBUF                        : 17
+#      OBUFT                       : 4
+# DSPs                             : 18
+#      DSP48A1                     : 18
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1402  out of  18224     7%  
+ Number of Slice LUTs:                13801  out of   9112   151% (*) 
+    Number used as Logic:             13801  out of   9112   151% (*) 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  14308
+   Number with an unused Flip Flop:   12906  out of  14308    90%  
+   Number with an unused LUT:           507  out of  14308     3%  
+   Number of fully used LUT-FF pairs:   895  out of  14308     6%  
+   Number of unique control sets:        76
+
+IO Utilization: 
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    232    12%  
+    IOB Flip Flops/Latches:              17
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                3  out of     32     9%  
+    Number using Block RAM only:          3
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of DSP48A1s:                     18  out of     32    56%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+c_div/clock_1MHz                   | BUFG                      | 104   |
+c_div/clock_10KHz_int              | NONE(c_div/count_1KHz_2)  | 4     |
+c_div/clock_100KHz_int             | NONE(c_div/count_10KHz_2) | 4     |
+c_div/clock_1MHz_int               | NONE(c_div/count_100KHz_2)| 4     |
+SYS_CLK                            | BUFGP                     | 303   |
+c_div/clock_1KHz                   | NONE(key_scn/sel_1)       | 14    |
+c_div/c_div/clock_100KHz           | BUFG                      | 799   |
+DATA_READY_DELAYED                 | BUFG                      | 191   |
+-----------------------------------+---------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 95.109ns (Maximum Frequency: 10.514MHz)
+   Minimum input arrival time before clock: 2.571ns
+   Maximum output required time after clock: 4.850ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c_div/clock_1MHz'
+  Clock period: 5.691ns (frequency: 175.712MHz)
+  Total number of paths / destination ports: 1193 / 177
+-------------------------------------------------------------------------
+Delay:               5.691ns (Levels of Logic = 4)
+  Source:            game_logic/TR_COUNTER_3 (FF)
+  Destination:       game_logic/DATA_BIT_9 (FF)
+  Source Clock:      c_div/clock_1MHz rising
+  Destination Clock: c_div/clock_1MHz rising
+
+  Data Path: game_logic/TR_COUNTER_3 to game_logic/DATA_BIT_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            48   0.447   1.884  TR_COUNTER_3 (TR_COUNTER_3)
+     LUT6:I0->O            1   0.203   0.827  Mmux_DATA_BIT[0]_PWR_8_o_mux_3059_OUT135 (Mmux_DATA_BIT[0]_PWR_8_o_mux_3059_OUT134)
+     LUT6:I2->O            1   0.203   0.808  Mmux_DATA_BIT[0]_PWR_8_o_mux_3059_OUT138 (Mmux_DATA_BIT[0]_PWR_8_o_mux_3059_OUT137)
+     LUT5:I2->O            1   0.205   0.808  Mmux_DATA_BIT[0]_PWR_8_o_mux_3059_OUT1314 (Mmux_DATA_BIT[0]_PWR_8_o_mux_3059_OUT1313)
+     LUT6:I3->O            1   0.205   0.000  Mmux_DATA_BIT[0]_PWR_8_o_mux_3059_OUT1315 (DATA_BIT[0]_PWR_8_o_mux_3059_OUT<6>)
+     FDE:D                     0.102          DATA_BIT_9
+    ----------------------------------------
+    Total                      5.691ns (1.365ns logic, 4.326ns route)
+                                       (24.0% logic, 76.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c_div/clock_10KHz_int'
+  Clock period: 2.610ns (frequency: 383.171MHz)
+  Total number of paths / destination ports: 19 / 8
+-------------------------------------------------------------------------
+Delay:               2.610ns (Levels of Logic = 1)
+  Source:            c_div/count_1KHz_2 (FF)
+  Destination:       c_div/count_1KHz_2 (FF)
+  Source Clock:      c_div/clock_10KHz_int rising
+  Destination Clock: c_div/clock_10KHz_int rising
+
+  Data Path: c_div/count_1KHz_2 to c_div/count_1KHz_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.845  count_1KHz_2 (count_1KHz_2)
+     LUT3:I0->O            4   0.205   0.683  n0031<2>1 (n0031)
+     FDR:R                     0.430          count_1KHz_0
+    ----------------------------------------
+    Total                      2.610ns (1.082ns logic, 1.528ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c_div/clock_100KHz_int'
+  Clock period: 2.610ns (frequency: 383.171MHz)
+  Total number of paths / destination ports: 19 / 8
+-------------------------------------------------------------------------
+Delay:               2.610ns (Levels of Logic = 1)
+  Source:            c_div/count_10KHz_2 (FF)
+  Destination:       c_div/count_10KHz_2 (FF)
+  Source Clock:      c_div/clock_100KHz_int rising
+  Destination Clock: c_div/clock_100KHz_int rising
+
+  Data Path: c_div/count_10KHz_2 to c_div/count_10KHz_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.845  count_10KHz_2 (count_10KHz_2)
+     LUT3:I0->O            4   0.205   0.683  n0023<2>1 (n0023)
+     FDR:R                     0.430          count_10KHz_0
+    ----------------------------------------
+    Total                      2.610ns (1.082ns logic, 1.528ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c_div/clock_1MHz_int'
+  Clock period: 2.610ns (frequency: 383.171MHz)
+  Total number of paths / destination ports: 19 / 8
+-------------------------------------------------------------------------
+Delay:               2.610ns (Levels of Logic = 1)
+  Source:            c_div/count_100KHz_2 (FF)
+  Destination:       c_div/count_100KHz_2 (FF)
+  Source Clock:      c_div/clock_1MHz_int rising
+  Destination Clock: c_div/clock_1MHz_int rising
+
+  Data Path: c_div/count_100KHz_2 to c_div/count_100KHz_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.845  count_100KHz_2 (count_100KHz_2)
+     LUT3:I0->O            4   0.205   0.683  n0015<2>1 (n0015)
+     FDR:R                     0.430          count_100KHz_0
+    ----------------------------------------
+    Total                      2.610ns (1.082ns logic, 1.528ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYS_CLK'
+  Clock period: 15.860ns (frequency: 63.050MHz)
+  Total number of paths / destination ports: 2137929 / 648
+-------------------------------------------------------------------------
+Delay:               15.860ns (Levels of Logic = 11)
+  Source:            game_logic/MAP_POS_1 (FF)
+  Destination:       game_logic/BOMB_MAP_0 (FF)
+  Source Clock:      SYS_CLK rising
+  Destination Clock: SYS_CLK rising
+
+  Data Path: game_logic/MAP_POS_1 to game_logic/BOMB_MAP_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            188   0.447   2.407  MAP_POS_1 (MAP_POS_1)
+     LUT6:I0->O            1   0.203   0.684  Sh111611 (Sh111611)
+     LUT3:I1->O            3   0.203   0.898  Sh111613 (Sh11161)
+     LUT6:I2->O            1   0.203   0.827  Sh6361 (Sh636)
+     LUT5:I1->O          194   0.203   2.048  Sh6362 (Msub_GND_8_o_GND_8_o_sub_237_OUT_cy<0>)
+     LUT6:I5->O           18   0.205   1.414  Msub_GND_8_o_GND_8_o_sub_237_OUT_xor<1>11 (GND_8_o_GND_8_o_sub_237_OUT<1>)
+     LUT6:I0->O            1   0.203   0.580  Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11073 (Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11073)
+     LUT6:I5->O            1   0.205   0.944  Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11074 (Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11074)
+     LUT6:I0->O            1   0.203   0.827  Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11076 (Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11076)
+     LUT6:I2->O            1   0.203   0.808  Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11085 (Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11085)
+     LUT6:I3->O           40   0.205   1.634  Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11086 (Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT11086)
+     LUT6:I3->O            1   0.205   0.000  Mmux_BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT111 (BOMB_MAP[0]_BOMB_MAP[0]_mux_568_OUT<0>)
+     FDRE:D                    0.102          BOMB_MAP_39
+    ----------------------------------------
+    Total                     15.860ns (2.790ns logic, 13.070ns route)
+                                       (17.6% logic, 82.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c_div/clock_1KHz'
+  Clock period: 2.730ns (frequency: 366.260MHz)
+  Total number of paths / destination ports: 53 / 26
+-------------------------------------------------------------------------
+Delay:               2.730ns (Levels of Logic = 1)
+  Source:            key_scn/state_FSM_FFd1 (FF)
+  Destination:       key_scn/sel_1 (FF)
+  Source Clock:      c_div/clock_1KHz rising
+  Destination Clock: c_div/clock_1KHz rising
+
+  Data Path: key_scn/state_FSM_FFd1 to key_scn/sel_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.447   0.878  state_FSM_FFd1 (state_FSM_FFd1)
+     LUT2:I0->O            7   0.203   0.773  _n0053_inv1 (_n0053_inv)
+     FDR:R                     0.430          sel_0
+    ----------------------------------------
+    Total                      2.730ns (1.080ns logic, 1.650ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c_div/c_div/clock_100KHz'
+  Clock period: 95.109ns (frequency: 10.514MHz)
+  Total number of paths / destination ports: 400129976048707270000000000000000000 / 1604
+-------------------------------------------------------------------------
+Delay:               95.109ns (Levels of Logic = 120)
+  Source:            lcd_ctrl/INDEX_2 (FF)
+  Destination:       lcd_ctrl/LCD_DATA_1 (FF)
+  Source Clock:      c_div/c_div/clock_100KHz rising
+  Destination Clock: c_div/c_div/clock_100KHz rising
+
+  Data Path: lcd_ctrl/INDEX_2 to lcd_ctrl/LCD_DATA_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q           291   0.447   2.175  INDEX_2 (INDEX_2)
+     LUT6:I4->O          171   0.203   2.028  Msub_GND_10_o_GND_10_o_sub_176_OUT_cy<6>11 (Mmux_a[0]_a[31]_MUX_5851_o1181)
+     begin scope: 'lcd_ctrl/GND_10_o_PWR_23_o_mod_176:Mmux_a[0]_a[31]_MUX_5851_o1181'
+     LUT2:I1->O            1   0.205   0.000  Mmux_a[22]_a[31]_MUX_6959_o111 (Mmux_a[22]_a[31]_MUX_6959_o11)
+     MUXCY:S->O            1   0.172   0.000  Madd_a[31]_GND_13_o_add_27_OUT_Madd_cy<22> (Madd_a[31]_GND_13_o_add_27_OUT_Madd_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_a[31]_GND_13_o_add_27_OUT_Madd_cy<23> (Madd_a[31]_GND_13_o_add_27_OUT_Madd_cy<23>)
+     XORCY:CI->O           4   0.180   1.048  Madd_a[31]_GND_13_o_add_27_OUT_Madd_xor<24> (a[31]_GND_13_o_add_27_OUT<24>)
+     LUT6:I0->O            1   0.203   0.000  BUS_0015_INV_1731_o11_G (N1674)
+     MUXF7:I1->O          26   0.140   1.207  BUS_0015_INV_1731_o11 (BUS_0015_INV_1731_o1)
+     LUT6:I5->O            3   0.205   1.015  Mmux_a[22]_a[31]_MUX_7023_o11 (a[22]_a[31]_MUX_7023_o)
+     LUT6:I0->O            5   0.203   0.715  BUS_0016_INV_1764_o21 (BUS_0016_INV_1764_o2)
+     LUT5:I4->O           24   0.205   1.173  BUS_0016_INV_1764_o23 (BUS_0016_INV_1764_o)
+     LUT3:I2->O            3   0.205   0.898  Mmux_a[26]_a[31]_MUX_7051_o11 (a[26]_a[31]_MUX_7051_o)
+     LUT6:I2->O           28   0.203   1.339  BUS_0017_INV_1797_o21 (BUS_0017_INV_1797_o2)
+     LUT6:I4->O            4   0.203   1.028  Mmux_a[18]_a[31]_MUX_7091_o11 (a[18]_a[31]_MUX_7091_o)
+     LUT6:I1->O            4   0.203   0.788  BUS_0018_INV_1830_o21 (BUS_0018_INV_1830_o2)
+     LUT5:I3->O           42   0.203   1.434  BUS_0018_INV_1830_o23 (BUS_0018_INV_1830_o)
+     LUT3:I2->O            4   0.205   1.028  Mmux_a[22]_a[31]_MUX_7119_o11 (a[22]_a[31]_MUX_7119_o)
+     LUT6:I1->O            1   0.203   0.580  BUS_0019_INV_1863_o22 (BUS_0019_INV_1863_o21)
+     LUT6:I5->O           54   0.205   1.574  BUS_0019_INV_1863_o23 (BUS_0019_INV_1863_o)
+     LUT3:I2->O            1   0.205   0.944  Mmux_a[31]_a[31]_MUX_7142_o11 (a[31]_a[31]_MUX_7142_o)
+     LUT6:I0->O           34   0.203   1.321  BUS_0020_INV_1896_o24 (BUS_0020_INV_1896_o)
+     LUT3:I2->O            3   0.205   0.995  Mmux_a[15]_a[31]_MUX_7190_o11 (a[15]_a[31]_MUX_7190_o)
+     LUT6:I1->O           36   0.203   1.577  BUS_0021_INV_1929_o23 (BUS_0021_INV_1929_o22)
+     LUT5:I2->O            6   0.205   0.973  Mmux_a[14]_a[31]_MUX_7223_o11 (a[14]_a[31]_MUX_7223_o)
+     LUT5:I2->O            1   0.205   0.808  BUS_0022_INV_1962_o33_SW0 (N1367)
+     LUT6:I3->O           79   0.205   1.739  BUS_0022_INV_1962_o34 (BUS_0022_INV_1962_o)
+     LUT3:I2->O            3   0.205   1.015  Mmux_a[23]_a[31]_MUX_7246_o11 (a[23]_a[31]_MUX_7246_o)
+     LUT6:I0->O            4   0.203   0.788  BUS_0023_INV_1995_o32 (BUS_0023_INV_1995_o31)
+     LUT6:I4->O           74   0.203   1.706  BUS_0023_INV_1995_o34 (BUS_0023_INV_1995_o)
+     LUT5:I4->O            3   0.205   0.995  Mmux_a[16]_a[31]_MUX_7285_o11 (a[16]_a[31]_MUX_7285_o)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0024_INV_2028_o_lut<1> (Mcompar_BUS_0024_INV_2028_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0024_INV_2028_o_cy<1> (Mcompar_BUS_0024_INV_2028_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0024_INV_2028_o_cy<2> (Mcompar_BUS_0024_INV_2028_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0024_INV_2028_o_cy<3> (Mcompar_BUS_0024_INV_2028_o_cy<3>)
+     MUXCY:CI->O          66   0.213   1.654  Mcompar_BUS_0024_INV_2028_o_cy<4> (BUS_0024_INV_2028_o)
+     LUT5:I4->O            5   0.205   1.059  Mmux_a[15]_a[31]_MUX_7318_o11 (a[15]_a[31]_MUX_7318_o)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0025_INV_2061_o_lut<1> (Mcompar_BUS_0025_INV_2061_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0025_INV_2061_o_cy<1> (Mcompar_BUS_0025_INV_2061_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0025_INV_2061_o_cy<2> (Mcompar_BUS_0025_INV_2061_o_cy<2>)
+     MUXCY:CI->O          21   0.213   1.114  Mcompar_BUS_0025_INV_2061_o_cy<3> (Mcompar_BUS_0025_INV_2061_o_cy<3>)
+     LUT3:I2->O           68   0.205   1.667  Mcompar_BUS_0025_INV_2061_o_cy<4> (BUS_0025_INV_2061_o)
+     LUT5:I4->O            3   0.205   0.995  Mmux_a[11]_a[31]_MUX_7354_o11 (a[11]_a[31]_MUX_7354_o)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0026_INV_2094_o_lut<0> (Mcompar_BUS_0026_INV_2094_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0026_INV_2094_o_cy<0> (Mcompar_BUS_0026_INV_2094_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0026_INV_2094_o_cy<1> (Mcompar_BUS_0026_INV_2094_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0026_INV_2094_o_cy<2> (Mcompar_BUS_0026_INV_2094_o_cy<2>)
+     MUXCY:CI->O           3   0.213   0.651  Mcompar_BUS_0026_INV_2094_o_cy<3> (Mcompar_BUS_0026_INV_2094_o_cy<3>)
+     LUT4:I3->O           68   0.205   1.667  Mcompar_BUS_0026_INV_2094_o_cy<4> (BUS_0026_INV_2094_o)
+     LUT5:I4->O            5   0.205   1.059  Mmux_a[10]_a[31]_MUX_7387_o11 (a[10]_a[31]_MUX_7387_o)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0027_INV_2127_o_lut<0> (Mcompar_BUS_0027_INV_2127_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0027_INV_2127_o_cy<0> (Mcompar_BUS_0027_INV_2127_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0027_INV_2127_o_cy<1> (Mcompar_BUS_0027_INV_2127_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0027_INV_2127_o_cy<2> (Mcompar_BUS_0027_INV_2127_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  Mcompar_BUS_0027_INV_2127_o_cy<3> (Mcompar_BUS_0027_INV_2127_o_cy<3>)
+     LUT5:I4->O           97   0.205   1.858  Mcompar_BUS_0027_INV_2127_o_cy<4> (BUS_0027_INV_2127_o)
+     LUT5:I4->O            3   0.205   0.995  Mmux_a[9]_a[31]_MUX_7420_o11 (a[9]_a[31]_MUX_7420_o)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0028_INV_2160_o_lut<0> (Mcompar_BUS_0028_INV_2160_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0028_INV_2160_o_cy<0> (Mcompar_BUS_0028_INV_2160_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0028_INV_2160_o_cy<1> (Mcompar_BUS_0028_INV_2160_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0028_INV_2160_o_cy<2> (Mcompar_BUS_0028_INV_2160_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  Mcompar_BUS_0028_INV_2160_o_cy<3> (Mcompar_BUS_0028_INV_2160_o_cy<3>)
+     LUT6:I5->O           77   0.205   1.726  Mcompar_BUS_0028_INV_2160_o_cy<4> (BUS_0028_INV_2160_o)
+     LUT5:I4->O            5   0.205   1.059  Mmux_a[8]_a[31]_MUX_7453_o11 (a[8]_a[31]_MUX_7453_o)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0029_INV_2193_o_lut<0> (Mcompar_BUS_0029_INV_2193_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0029_INV_2193_o_cy<0> (Mcompar_BUS_0029_INV_2193_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0029_INV_2193_o_cy<1> (Mcompar_BUS_0029_INV_2193_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0029_INV_2193_o_cy<2> (Mcompar_BUS_0029_INV_2193_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0029_INV_2193_o_cy<3> (Mcompar_BUS_0029_INV_2193_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0029_INV_2193_o_cy<4> (Mcompar_BUS_0029_INV_2193_o_cy<4>)
+     MUXCY:CI->O         104   0.213   1.888  Mcompar_BUS_0029_INV_2193_o_cy<5> (BUS_0029_INV_2193_o)
+     LUT5:I4->O            4   0.205   1.028  Mmux_a[7]_a[31]_MUX_7486_o11 (a[7]_a[31]_MUX_7486_o)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0030_INV_2226_o_lut<0> (Mcompar_BUS_0030_INV_2226_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0030_INV_2226_o_cy<0> (Mcompar_BUS_0030_INV_2226_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0030_INV_2226_o_cy<1> (Mcompar_BUS_0030_INV_2226_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0030_INV_2226_o_cy<2> (Mcompar_BUS_0030_INV_2226_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0030_INV_2226_o_cy<3> (Mcompar_BUS_0030_INV_2226_o_cy<3>)
+     MUXCY:CI->O           3   0.213   0.651  Mcompar_BUS_0030_INV_2226_o_cy<4> (Mcompar_BUS_0030_INV_2226_o_cy<4>)
+     LUT3:I2->O          104   0.205   1.888  Mcompar_BUS_0030_INV_2226_o_cy<5> (BUS_0030_INV_2226_o)
+     LUT5:I4->O            5   0.205   1.059  a[6]_a[31]_MUX_7519_o1 (a[6]_a[31]_MUX_7551_o_bdd0)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0031_INV_2259_o_lut<0> (Mcompar_BUS_0031_INV_2259_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0031_INV_2259_o_cy<0> (Mcompar_BUS_0031_INV_2259_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0031_INV_2259_o_cy<1> (Mcompar_BUS_0031_INV_2259_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0031_INV_2259_o_cy<2> (Mcompar_BUS_0031_INV_2259_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0031_INV_2259_o_cy<3> (Mcompar_BUS_0031_INV_2259_o_cy<3>)
+     MUXCY:CI->O           3   0.213   0.651  Mcompar_BUS_0031_INV_2259_o_cy<4> (Mcompar_BUS_0031_INV_2259_o_cy<4>)
+     LUT4:I3->O           82   0.205   1.759  Mcompar_BUS_0031_INV_2259_o_cy<5> (BUS_0031_INV_2259_o)
+     LUT5:I4->O            2   0.205   0.961  Mmux_a[5]_a[31]_MUX_7552_o11 (a[5]_a[31]_MUX_7552_o)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_BUS_0032_INV_2292_o_lut<0> (Mcompar_BUS_0032_INV_2292_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0032_INV_2292_o_cy<0> (Mcompar_BUS_0032_INV_2292_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0032_INV_2292_o_cy<1> (Mcompar_BUS_0032_INV_2292_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0032_INV_2292_o_cy<2> (Mcompar_BUS_0032_INV_2292_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0032_INV_2292_o_cy<3> (Mcompar_BUS_0032_INV_2292_o_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  Mcompar_BUS_0032_INV_2292_o_cy<4> (Mcompar_BUS_0032_INV_2292_o_cy<4>)
+     LUT5:I4->O           38   0.205   1.377  Mcompar_BUS_0032_INV_2292_o_cy<5> (BUS_0032_INV_2292_o)
+     LUT5:I4->O          153   0.205   2.115  Mmux_a[0]_a[31]_MUX_7589_o131 (Madd_a[31]_GND_13_o_add_65_OUT_Madd_Madd_lut<3>)
+     LUT5:I3->O            1   0.203   0.000  Mcompar_BUS_0033_INV_2325_o_lut<0> (Mcompar_BUS_0033_INV_2325_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_BUS_0033_INV_2325_o_cy<0> (Mcompar_BUS_0033_INV_2325_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0033_INV_2325_o_cy<1> (Mcompar_BUS_0033_INV_2325_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0033_INV_2325_o_cy<2> (Mcompar_BUS_0033_INV_2325_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_BUS_0033_INV_2325_o_cy<3> (Mcompar_BUS_0033_INV_2325_o_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  Mcompar_BUS_0033_INV_2325_o_cy<4> (Mcompar_BUS_0033_INV_2325_o_cy<4>)
+     LUT6:I5->O          209   0.205   2.056  Mcompar_BUS_0033_INV_2325_o_cy<5> (BUS_0033_INV_2325_o)
+     LUT3:I2->O           96   0.205   1.851  Mmux_o31 (o<2>)
+     end scope: 'lcd_ctrl/GND_10_o_PWR_23_o_mod_176:o<2>'
+     LUT6:I5->O            1   0.205   0.580  _n50298<7>1 (_n50298<7>)
+     LUT6:I5->O            1   0.205   0.580  _n50298<7>2 (_n50298<7>1)
+     LUT6:I5->O            1   0.205   0.580  _n50298<7>3 (_n50298<7>2)
+     LUT6:I5->O            2   0.205   0.617  _n50298<7>4 (_n50298)
+     LUT6:I5->O            4   0.205   0.684  Mmux_LCD_DATA_NEXT391413 (Mmux_LCD_DATA_NEXT39141)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3976 (Mmux_LCD_DATA_NEXT3975)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3978 (Mmux_LCD_DATA_NEXT3977)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3980 (Mmux_LCD_DATA_NEXT3979)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3981 (Mmux_LCD_DATA_NEXT3980)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3982 (Mmux_LCD_DATA_NEXT3981)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3983 (Mmux_LCD_DATA_NEXT3982)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3987 (Mmux_LCD_DATA_NEXT3986)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3989 (Mmux_LCD_DATA_NEXT3988)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3995 (Mmux_LCD_DATA_NEXT3994)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3996 (Mmux_LCD_DATA_NEXT3995)
+     LUT6:I5->O            1   0.205   0.580  Mmux_LCD_DATA_NEXT3998 (Mmux_LCD_DATA_NEXT3997)
+     LUT6:I5->O            2   0.205   0.000  Mmux_LCD_DATA_NEXT3999 (LCD_DATA_NEXT<1>)
+     FD:D                      0.102          LCD_DATA_1
+    ----------------------------------------
+    Total                     95.109ns (19.691ns logic, 75.418ns route)
+                                       (20.7% logic, 79.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_DELAYED'
+  Clock period: 1.733ns (frequency: 576.951MHz)
+  Total number of paths / destination ports: 160 / 160
+-------------------------------------------------------------------------
+Delay:               1.733ns (Levels of Logic = 1)
+  Source:            lcd_ctrl/MAP_0 (FF)
+  Destination:       lcd_ctrl/MAP_0 (FF)
+  Source Clock:      DATA_READY_DELAYED rising
+  Destination Clock: DATA_READY_DELAYED rising
+
+  Data Path: lcd_ctrl/MAP_0 to lcd_ctrl/MAP_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.981  MAP_0 (MAP_0)
+     LUT6:I0->O            1   0.203   0.000  Mmux_MAP[0]_RENDER_DATA[9]_mux_1298_OUT41 (MAP[0]_RENDER_DATA[9]_mux_1298_OUT<3>)
+     FDE:D                     0.102          MAP_0
+    ----------------------------------------
+    Total                      1.733ns (0.752ns logic, 0.981ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c_div/clock_1MHz'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              2.571ns (Levels of Logic = 2)
+  Source:            RECV_PORT2 (PAD)
+  Destination:       rc/DATA_OUT_0 (FF)
+  Destination Clock: c_div/clock_1MHz rising
+
+  Data Path: RECV_PORT2 to rc/DATA_OUT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.222   1.027  RECV_PORT2_IBUF (RECV_PORT2_IBUF)
+     begin scope: 'rc:SYNC'
+     FDE:CE                    0.322          DATA_OUT_15
+    ----------------------------------------
+    Total                      2.571ns (1.544ns logic, 1.027ns route)
+                                       (60.1% logic, 39.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c_div/clock_1KHz'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              2.146ns (Levels of Logic = 3)
+  Source:            KEY4X4_col<2> (PAD)
+  Destination:       key_scn/keys_pressed_6 (FF)
+  Destination Clock: c_div/clock_1KHz rising
+
+  Data Path: KEY4X4_col<2> to key_scn/keys_pressed_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.617  KEY4X4_col_2_IBUF (KEY4X4_col_2_IBUF)
+     begin scope: 'key_scn:col<2>'
+     LUT4:I3->O            1   0.205   0.000  Mmux_keys_pressed_next21 (keys_pressed_next<10>)
+     FDR:D                     0.102          keys_pressed_10
+    ----------------------------------------
+    Total                      2.146ns (1.529ns logic, 0.617ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c_div/c_div/clock_100KHz'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.382ns (Levels of Logic = 3)
+  Source:            lcd_ctrl/ENABLE (FF)
+  Destination:       LCD_ENABLE (PAD)
+  Source Clock:      c_div/c_div/clock_100KHz rising
+
+  Data Path: lcd_ctrl/ENABLE to LCD_ENABLE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.580  ENABLE (ENABLE)
+     LUT2:I1->O            1   0.205   0.579  LCD_ENABLE1 (LCD_ENABLE)
+     end scope: 'lcd_ctrl:LCD_ENABLE'
+     OBUF:I->O                 2.571          LCD_ENABLE_OBUF (LCD_ENABLE)
+    ----------------------------------------
+    Total                      4.382ns (3.223ns logic, 1.159ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c_div/clock_1KHz'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              4.850ns (Levels of Logic = 3)
+  Source:            key_scn/sel_0 (FF)
+  Destination:       KEY4X4_row<3> (PAD)
+  Source Clock:      c_div/clock_1KHz rising
+
+  Data Path: key_scn/sel_0 to KEY4X4_row<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             12   0.447   1.013  sel_0 (sel_0)
+     LUT2:I0->O            2   0.203   0.616  scanned_to_3rd_row_inv1 (scanned_to_3rd_row_inv)
+     end scope: 'key_scn:scanned_to_3rd_row_inv'
+     OBUFT:T->O                2.571          KEY4X4_row_3_OBUFT (KEY4X4_row<3>)
+    ----------------------------------------
+    Total                      4.850ns (3.221ns logic, 1.629ns route)
+                                       (66.4% logic, 33.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c_div/clock_1MHz'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 2)
+  Source:            tr/S_OUT (FF)
+  Destination:       TR_PORT1 (PAD)
+  Source Clock:      c_div/clock_1MHz rising
+
+  Data Path: tr/S_OUT to TR_PORT1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  S_OUT (S_OUT)
+     end scope: 'tr:S_OUT'
+     OBUF:I->O                 2.571          TR_PORT1_OBUF (TR_PORT1)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.484ns (Levels of Logic = 4)
+  Source:            c_div/clock_100KHz (FF)
+  Destination:       LCD_ENABLE (PAD)
+  Source Clock:      SYS_CLK rising
+
+  Data Path: c_div/clock_100KHz to LCD_ENABLE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.684  clock_100KHz (c_div/clock_100KHz)
+     end scope: 'c_div:c_div/clock_100KHz'
+     begin scope: 'lcd_ctrl:clock_100KHz'
+     LUT2:I0->O            1   0.203   0.579  LCD_ENABLE1 (LCD_ENABLE)
+     end scope: 'lcd_ctrl:LCD_ENABLE'
+     OBUF:I->O                 2.571          LCD_ENABLE_OBUF (LCD_ENABLE)
+    ----------------------------------------
+    Total                      4.484ns (3.221ns logic, 1.263ns route)
+                                       (71.8% logic, 28.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock DATA_READY_DELAYED
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+DATA_READY_DELAYED|    1.733|         |         |         |
+c_div/clock_1MHz  |    4.071|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SYS_CLK
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+SYS_CLK              |   15.860|         |         |         |
+c_div/clock_10KHz_int|    1.165|         |         |         |
+c_div/clock_1KHz     |    6.680|         |         |         |
+c_div/clock_1MHz     |    6.905|         |         |         |
+c_div/clock_1MHz_int |    1.293|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock c_div/c_div/clock_100KHz
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+DATA_READY_DELAYED      |   22.291|         |         |         |
+c_div/c_div/clock_100KHz|   95.109|         |         |         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock c_div/clock_100KHz_int
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+c_div/clock_100KHz_int|    2.610|         |         |         |
+----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock c_div/clock_10KHz_int
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+c_div/clock_10KHz_int|    2.610|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock c_div/clock_1KHz
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+c_div/clock_1KHz|    2.730|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock c_div/clock_1MHz
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+SYS_CLK         |    4.971|         |         |         |
+c_div/clock_1MHz|    5.691|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock c_div/clock_1MHz_int
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+c_div/clock_1MHz_int|    2.610|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+=========================================================================
+WARNING:Xst:615 - Flip flop associated with net clock_1MHz_BUFG not found, property IOB not attached.
+
+
+Total REAL time to Xst completion: 2778.00 secs
+Total CPU time to Xst completion: 2778.52 secs
+ 
+--> 
+
+Total memory usage is 653152 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  163 (   0 filtered)
+Number of infos    :   50 (   0 filtered)
+
